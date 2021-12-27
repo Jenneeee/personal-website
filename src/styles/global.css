@@ -1,0 +1,16 @@
+@import url("https://use.typekit.net/yro0imc.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: var(--fontRegular);
+  font-family: aktiv-grotesk, sans-serif;
+  color: var(--color--black);
+  background-color: var(--color--white);
+}

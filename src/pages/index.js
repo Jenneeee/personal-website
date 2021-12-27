@@ -3,8 +3,7 @@ import Header from '../components/header'
 
 export default function Home() {
   return <div>
-          <title>Jenne Cattoor - Home</title>
-          <Header pageTitle="Home">
-          </Header>
+          <title>Jenne | Web developer & UI/UX designer</title>
+          <Header pageTitle="Home"></Header>
         </div>
 }

@@ -1,14 +1,22 @@
 import React from "react"
 import { Link } from 'gatsby'
+import { 
+    header,
+    navbar,
+    navlink,
+    title
+} from './header.module.css'
 
 export default function Header() {
-  return <header>
-            <h1>Jenne Cattoor</h1>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                </ul>
-            </nav>
-         </header>
+  return (
+  <header className={header}>
+    <h1><Link className={title} to="/">Jenne Cattoor</Link></h1>
+    <nav>
+        <ul className={navbar}>
+            <li><Link className={navlink} to="/portfolio">Portfolio</Link></li>
+            <li><Link className={navlink} to="/about">About</Link></li>
+            <li><Link className={navlink} to="/contact">Contact</Link></li>
+        </ul>
+    </nav>
+ </header>)
 }
