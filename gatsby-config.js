@@ -1,10 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+ siteMetadata: {
+    title: "Jenne Cattoor | Web developer & UI/UX designer",
+    titleTemplate: "Jenne Cattoor | Web developer & UI/UX designer",
+    description:
+      "Hi I'm Jenne, feel free to explore my website",
+    url: "https://www.jennecattoor.com"
+  },
 }
