@@ -11,6 +11,6 @@ html {
 body {
   font-size: var(--fontRegular);
   font-family: aktiv-grotesk, sans-serif;
-  color: var(--color--black);
+  color: var(--colorText);
   background-color: var(--color--white);
 }

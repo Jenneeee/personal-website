@@ -1,7 +1,8 @@
 :root {
   --colorLightest: #ffffff;
-  --colorText: #211f1f;
-  --colorMain: #fca311;
+  --colorText: #1d1d1d;
+  --colorAccent: #ffa300;
+  --colorGrey: #cfcfcf;
   --spacerSmall: .5rem;
   --spacerRegular: .75rem;
   --spacerMedium: 1.25rem;
@@ -9,7 +10,7 @@
   --fontSmall: .5rem;
   --fontRegular: 1rem;
   --fontMedium: 1.2rem;
-  --fontBig: 1.5rem;
+  --fontBig: 3rem;
   --fontWeightRegular: 500;
   --fontWeightBold: 700;
 }

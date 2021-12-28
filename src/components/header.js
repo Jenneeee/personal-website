@@ -13,6 +13,7 @@ export default function Header() {
     <h1><Link className={title} to="/">Jenne Cattoor</Link></h1>
     <nav>
         <ul className={navbar}>
+            <li><Link className={navlink} to="/">Home</Link></li>
             <li><Link className={navlink} to="/portfolio">Portfolio</Link></li>
             <li><Link className={navlink} to="/about">About</Link></li>
             <li><Link className={navlink} to="/contact">Contact</Link></li>
