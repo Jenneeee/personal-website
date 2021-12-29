@@ -23,11 +23,12 @@ export default function Header() {
                 <li><Link className={navlink} to="/contact">Contact</Link></li>
             </ul>
         </nav>
-        <div className={hamburger}>
+        <button className={hamburger} id="hamburger">
+            <span className="hidden">Toggle Menu</span>
             <span className={bar}></span>
             <span className={bar}></span>
             <span className={bar}></span>
-        </div>
+        </button>
     </div>
  </header>)
 }
