@@ -1,12 +1,12 @@
 :root {
-  --colorLightest: #ffffff;
-  --colorText: #1d1d1d;
+  --colorLight: #ffffff;
+  --colorDark: #1d1d1d;
   --colorAccent: #ffa300;
   --colorGrey: #cfcfcf;
   --spacerSmall: .5rem;
   --spacerRegular: .75rem;
   --spacerMobile: .9rem;
-  --spacerMedium: 1.25rem;
+  --spacerMedium: 1rem;
   --spacerBig: 1.5rem;
   --fontSmall: .5rem;
   --fontRegular: 1rem;

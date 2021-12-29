@@ -9,19 +9,43 @@ html {
 }
 
 body {
-  font-size: var(--fontRegular);
+  height: 100vh;
   font-family: aktiv-grotesk, sans-serif;
-  color: var(--colorText);
-  background-color: var(--color--white);
+  font-size: var(--fontRegular);
+  color: var(--colorDark);
+  background-color: var(--colorLigh);
+  margin: var(--spacerMobile);
 }
 
 .hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+li, a {
+  text-decoration: none;
+  color: var(--colorDark);
+}
+
+h1, h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 2rem 3rem;;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 3rem 5rem;;
+  }
 }
