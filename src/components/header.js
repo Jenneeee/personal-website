@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons'
-import './header.css'
+import './header.scss'
 
 export default function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false)

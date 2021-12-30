@@ -1,5 +1,6 @@
 module.exports = {
- siteMetadata: {
+  plugins: [`gatsby-plugin-sass`],
+  siteMetadata: {
     title: "Jenne Cattoor | Web developer & UI/UX designer",
     titleTemplate: "Jenne Cattoor | Web developer & UI/UX designer",
     description:
