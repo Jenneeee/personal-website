@@ -1,8 +1,8 @@
 :root {
   --colorLight: #ffffff;
-  --colorDark: #213337;
-  --colorAccent: #d55302;
-  --colorGrey: #cfcfcf;
+  --colorDark: #000000;
+  --colorAccent: #FF5959;
+  --colorGray: #474747;
   --spacerSmall: .5rem;
   --spacerRegular: .75rem;
   --spacerMobile: .9rem;

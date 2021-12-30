@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  height: 100vh;
   font-family: aktiv-grotesk, sans-serif;
   font-display: swap;
   font-size: var(--fontRegular);
@@ -28,6 +27,17 @@ body {
   width: 1px;
 }
 
+.button {
+  background-color: var(--colorDark);
+  max-width: 10rem;
+  border: none;
+  color: var(--colorLight);
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: inherit;
+}
+
 li, a {
   text-decoration: none;
   color: var(--colorDark);
@@ -35,5 +45,31 @@ li, a {
 
 h1, h2 {
   font-family: futura-pt, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+p {
+  color: var(--colorGray);
+  line-height: 1.9rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: var(--fontLarge);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: var(--fontBig);
+  }
 }
