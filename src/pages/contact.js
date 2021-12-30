@@ -1,9 +1,11 @@
 import React from "react"
+import Seo from "../components/seo"
 import Header from '../components/header'
 
 export default function Contact() {
-  return <div>
-          <title>Jenne Cattoor | Contact</title>
-          <Header pageTitle="Contact"></Header>
-        </div>
+  return (
+  <div>
+    <Seo title="Contact" />
+    <Header />
+  </div>)
 }

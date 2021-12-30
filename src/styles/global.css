@@ -11,9 +11,10 @@ html {
 body {
   height: 100vh;
   font-family: aktiv-grotesk, sans-serif;
+  font-display: swap;
   font-size: var(--fontRegular);
   color: var(--colorDark);
-  background-color: var(--colorLigh);
+  background-color: var(--colorLight);
   margin: var(--spacerMobile);
 }
 

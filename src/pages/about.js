@@ -1,9 +1,11 @@
 import React from "react"
+import Seo from "../components/seo"
 import Header from '../components/header'
 
 export default function About() {
-  return <div>
-          <title>Jenne Cattoor | About</title>
-          <Header pageTitle="About"></Header>
-        </div>
+  return (
+  <div>
+    <Seo title="About" />
+    <Header />
+  </div>)
 }
