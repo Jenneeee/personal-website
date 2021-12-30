@@ -36,6 +36,7 @@ li, a {
 
 h1, h2 {
   font-family: futura-pt, sans-serif;
+  font-display: swap;
   font-weight: 700;
 }
 
