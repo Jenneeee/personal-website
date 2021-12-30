@@ -20,7 +20,7 @@ export default function Header() {
     <div className="navWrapper">
         <h1><Link className='title' to="/" onClick={() => closeMenu()}>Jenne Cattoor</Link></h1>
 
-        <button className={`hamburger ${navbarOpen ? ' active' : ''}`} id="hamburger" onClick={handleToggle}>
+        <button className={`hamburger ${navbarOpen ? ' open' : ''}`} id="hamburger" onClick={handleToggle}>
             <span className='hidden'>Toggle Menu</span>
             <span className='bar bar1'></span>
             <span className='bar bar2'></span>
@@ -30,16 +30,16 @@ export default function Header() {
     <div className={`menu ${navbarOpen ? ' open' : ''}`}>
         <nav>
             <ul className="navigation">
-                <li><Link className='navlink' to="/" onClick={() => closeMenu()}>Home</Link></li>
-                <li><Link className='navlink' to="/portfolio" onClick={() => closeMenu()}>Portfolio</Link></li>
-                <li><Link className='navlink' to="/about" onClick={() => closeMenu()}>About</Link></li>
-                <li><Link className='navlink' to="/contact" onClick={() => closeMenu()}>Contact</Link></li>
+                <li><Link className='navlink' to="/" activeClassName="navLink active" onClick={() => closeMenu()}>Home</Link></li>
+                <li><Link className='navlink' to="/portfolio" activeClassName="active" onClick={() => closeMenu()}>Portfolio</Link></li>
+                <li><Link className='navlink' to="/about" activeClassName="active" onClick={() => closeMenu()}>About</Link></li>
+                <li><Link className='navlink' to="/contact" activeClassName="active" onClick={() => closeMenu()}>Contact</Link></li>
             </ul>
         </nav>
         <div className='socials'>
-            <a href="https://www.instagram.com/jennecattoor"><FontAwesomeIcon icon={faInstagram} size="lg"/><span className='hidden'>Instagram</span></a>
-            <a href="https://dribbble.com/Cattoor"><FontAwesomeIcon icon={faDribbble} size="lg"/><span className='hidden'>Dribbble</span></a>
-            <a href="https://github.com/Jenneeee"><FontAwesomeIcon icon={faGithub} size="lg"/><span className='hidden'>GitHub</span></a>
+            <a href="https://www.instagram.com/jennecattoor"><FontAwesomeIcon icon={faInstagram}/><span className='hidden'>Instagram</span></a>
+            <a href="https://dribbble.com/Cattoor"><FontAwesomeIcon icon={faDribbble} /><span className='hidden'>Dribbble</span></a>
+            <a href="https://github.com/Jenneeee"><FontAwesomeIcon icon={faGithub} /><span className='hidden'>GitHub</span></a>
         </div>
     </div>
  </header>)
