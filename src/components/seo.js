@@ -14,7 +14,6 @@ function Seo({ description, lang, meta, title }) {
             author
             keywords
             url
-            robots
           }
         }
       }
@@ -22,7 +21,6 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const url = site.siteMetadata.url
-  const robots = site.siteMetadata.robots
   const keywords = site.siteMetadata.keywords
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
@@ -58,10 +56,6 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `url`,
           content: url,
-        },
-        {
-          name: `robots`,
-          content: robots,
         }
       ].concat(meta)}
     />

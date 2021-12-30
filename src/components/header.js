@@ -37,9 +37,9 @@ export default function Header() {
             </ul>
         </nav>
         <div className='socials'>
-            <a href="https://www.instagram.com/jennecattoor"><FontAwesomeIcon icon={faInstagram}/><span className='hidden'>Instagram</span></a>
-            <a href="https://dribbble.com/Cattoor"><FontAwesomeIcon icon={faDribbble} /><span className='hidden'>Dribbble</span></a>
-            <a href="https://github.com/Jenneeee"><FontAwesomeIcon icon={faGithub} /><span className='hidden'>GitHub</span></a>
+            <a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/><span className='hidden'>Instagram</span></a>
+            <a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faDribbble} /><span className='hidden'>Dribbble</span></a>
+            <a href="https://github.com/Jenneeee" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /><span className='hidden'>GitHub</span></a>
         </div>
     </div>
  </header>)

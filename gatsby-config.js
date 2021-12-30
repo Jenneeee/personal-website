@@ -9,6 +9,5 @@ module.exports = {
     author: `Jenne Cattoor`,
     keywords: `jenne cattoor, designer, developer, freelance, ui ux, front-end developer, portfolio`,
     url: "https://www.jennecattoor.com",
-    robots: "index,follow"
   },
 }

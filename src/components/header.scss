@@ -1,3 +1,7 @@
+.header {
+  margin: var(--spacerMobile);
+}
+
 .title {
   font-size: var(--fontLarge);
   letter-spacing: -1px;
@@ -15,6 +19,7 @@
 
 .navlink {
   margin: var(--spacerRegular);
+  padding-bottom: 1px;
   font-size: var(--fontMedium);
 }
 
@@ -69,6 +74,7 @@
   .header {
     display: flex;
     justify-content: space-between;
+    margin: 2rem 3rem;
   }
 
   .title {
@@ -114,6 +120,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .header {
+    margin: 3rem 5rem;
+  }
   .socials {
     display: inline;
     font-size: 1.5rem;
