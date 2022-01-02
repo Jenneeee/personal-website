@@ -1,30 +1,20 @@
 .header {
   margin: var(--spacerMobile);
+  font-size: var(--fontMedium);
 }
 
 .title {
-  font-size: var(--fontLarge);
-  letter-spacing: -1px;
+  font-size: 1.5rem;
 }
 
 .navWrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-}
-
-.navlink {
-  margin: var(--spacerRegular);
-  padding-bottom: 1px;
-  font-size: var(--fontMedium);
-}
-
-.socials a {
-  margin: var(--spacerSmall);
+.socials {
+  display: none;
 }
 
 .hamburger {
@@ -37,28 +27,20 @@
   .bar {
     display: block;
     width: 25px;
-    height: 3px;
+    height: 2px;
     margin: 5px;
     border-radius: 4px;
-    transition: all .3s ease-in-out;
+    transition: all .25s ease-in-out;
     background-color: var(--colorDark);
-  }
-
-  .bar2 {
-    width: 20px;
   }
 }
 
 .hamburger.open  {
   .bar1 {
-    transform: translate3d(0, 8px, 0) rotate(45deg);
+    transform: translate3d(0, 4px, 0) rotate(45deg);
   }
   .bar2 {
-    opacity: 0;
-  }
-
-  .bar3 {
-    transform: translate3d(0, -8px, 0) rotate(-45deg);
+    transform: translate3d(0, -4px, 0) rotate(-45deg);
   }
 }
 
@@ -67,7 +49,40 @@
 }
 
 .menu.open {
-  display: block;
+  display: inline-block;
+}
+
+.menu.open body{
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navigation {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background: var(--colorLight);
+    overflow-y: scroll;
+
+    .navList {
+      margin-top: 5rem;
+      margin-left: .5rem;
+    }
+
+    .navlink {
+      font-size: var(--fontBig);
+      font-weight: 600;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .active {
+      color: var(--colorLight);
+      -webkit-text-stroke: 1.5px var(--colorDark);
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -82,9 +97,14 @@
   }
 
   .navigation {
-    flex-direction: row;
+
+    .navList {
+      display: flex;
+    }
 
     .navlink {
+      margin: var(--spacerRegular);
+      padding-bottom: 2px;
       background-image: linear-gradient(var(--colorDark), var(--colorDark));
       background-position: 0 100%;
       background-size: 0% 2px;
@@ -113,18 +133,18 @@
     display: flex;
     align-items: center;
   }
-
-  .socials {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
   .header {
-    margin: 3rem 5rem;
+    margin: 2rem 5rem;
   }
   .socials {
     display: inline;
     font-size: 1.5rem;
+
+    a {
+      margin: var(--spacerSmall);
+    }
   }
 }

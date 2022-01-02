@@ -1,0 +1,16 @@
+.homeWrapper {
+  padding: var(--spacerMobile);
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .homeWrapper {
+    margin: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .homeWrapper {
+    margin: 3rem 5rem;
+  }
+}
