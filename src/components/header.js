@@ -8,19 +8,13 @@ import { doc } from "prettier"
 export default function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
-    if (navbarOpen) {
-        componentWillMount(document.body.classList.add("overflow"));
-    }
-    if (!navbarOpen) {
-        componentWillMount(ocument.body.classList.remove("overflow"));
-    }
-    
-
     const handleToggle = () => {
         setNavbarOpen(prev => !prev)
+        document.body.classList.add("overflow")
     }
 
     const closeMenu = () => {
+        document.body.classList.remove("overflow")
         setNavbarOpen(false)
     }
 
