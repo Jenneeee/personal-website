@@ -9,11 +9,12 @@ export default function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     if (navbarOpen) {
-        document.body.classList.add("overflow");
+        componentWillMount(document.body.classList.add("overflow"));
     }
     if (!navbarOpen) {
-        document.body.classList.remove("overflow");
+        componentWillMount(ocument.body.classList.remove("overflow"));
     }
+    
 
     const handleToggle = () => {
         setNavbarOpen(prev => !prev)
