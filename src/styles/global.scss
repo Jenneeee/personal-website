@@ -31,6 +31,33 @@ body {
   overflow: hidden;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  
+  .button-text {
+    margin-left: var(--spacerSmall);
+    font-size: 1.15rem;
+  }
+
+  .button-arrow {
+  width: 2.5rem;
+
+  .svg--arrow {
+    fill:#0b1014;
+  }
+  
+  .svg--circle {
+    fill:none;
+    stroke:#0b1014;
+    stroke-miterlimit:10;
+    stroke-width:1px;
+  }
+}
+}
+
+
+
 li, a {
   text-decoration: none;
   color: var(--colorDark);

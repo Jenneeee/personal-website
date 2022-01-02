@@ -3,14 +3,19 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons'
 import './header.scss'
-import { doc } from "prettier"
 
 export default function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     const handleToggle = () => {
         setNavbarOpen(prev => !prev)
-        document.body.classList.add("overflow")
+        
+        if (document.body.classList.contains("overflow")) {
+            document.body.classList.remove("overflow");
+        }
+        else {
+            document.body.classList.add("overflow")
+        }
     }
 
     const closeMenu = () => {
