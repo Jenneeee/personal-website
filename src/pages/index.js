@@ -11,23 +11,6 @@ export default function Home() {
     <Header />
     <div className="homeWrapper">
       <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
-            <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about">More about me</Link>
     </div>
   </div>)
 }
