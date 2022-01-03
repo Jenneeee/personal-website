@@ -7,11 +7,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        name: `portfolio`,
+        path: `./src/data`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`
   ],
   siteMetadata: {
     title: `Jenne Cattoor`,
