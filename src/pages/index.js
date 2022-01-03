@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import Seo from "../components/seo"
 import Header from '../components/header'
+import Footer from '../components/footer'
 import Arrow from '../icons/arrow'
 import Case from '../components/case'
 import { graphql, useStaticQuery } from "gatsby"
@@ -46,5 +47,6 @@ export default function Home() {
         )
       })}
     </div>
+    <Footer />
   </div>)
 }

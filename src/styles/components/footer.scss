@@ -1,5 +1,29 @@
 .footer {
-  padding: 4rem;
-  color: var(--colorLight);
+  padding: var(--spacerMobile);
   background-color: var(--colorDark);
+  color: var(--colorLight);
+}
+
+.footer-item {
+  margin: 1.3rem 0;
+}
+
+.socials-footer {
+  a {
+    color: #fff!important;
+    font-size: 2rem;
+    padding: .5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 3rem 5rem;
+  }
 }
