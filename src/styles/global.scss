@@ -41,22 +41,20 @@ body {
   }
 
   .button-arrow {
-  width: 2.5rem;
+    width: 2.5rem;
 
-  .svg--arrow {
-    fill:#0b1014;
-  }
+    .svg--arrow {
+      fill:#0b1014;
+    }
   
-  .svg--circle {
-    fill:none;
-    stroke:#0b1014;
-    stroke-miterlimit:10;
-    stroke-width:1px;
+    .svg--circle {
+      fill:none;
+      stroke:#0b1014;
+      stroke-miterlimit:10;
+      stroke-width:1px;
+    }
   }
 }
-}
-
-
 
 li, a {
   text-decoration: none;
@@ -68,6 +66,12 @@ h2 {
   font-weight: 500;
   font-size: 1.75rem;
   margin: 1.5rem 0;
+}
+
+h3 {
+  line-height: 2.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 p {
