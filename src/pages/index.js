@@ -5,7 +5,7 @@ import Header from '../components/header'
 import Arrow from '../icons/arrow'
 import Case from '../components/case'
 import { graphql, useStaticQuery } from "gatsby"
-import './index.scss'
+import '../styles/pages/index.scss'
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -15,6 +15,12 @@ export default function Home() {
         node {
           title
           description
+          slug
+          image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
@@ -31,10 +37,12 @@ export default function Home() {
       
       {projects.map(({ node: project }) => {
         const title = project.title;
-        const description = project.description
+        const description = project.description;
+        const slug = project.slug;
+        const image = project.image.childImageSharp.gatsbyImageData;
 
         return (
-          <Case title={title} description={description} />
+          <Case key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}
     </div>

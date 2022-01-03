@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from 'gatsby'
 import Arrow from '../icons/arrow'
-import { StaticImage } from "gatsby-plugin-image"
-import './case.scss'
+import { GatsbyImage } from "gatsby-plugin-image"
+import '../styles/components/case.scss'
 
-export default function Case({ title, description}) {
+export default function Case({ title, description, image }) {
   return (
   <section className="case-wrapper">
-    <StaticImage src="../data/images/project1.jpg" alt="A rectangle" />
+    <GatsbyImage image={image} alt={title}/>
     <p>{description}</p>
     <h3>{title}</h3>
     <Link className="button" to="/"><div className="button-arrow"><Arrow /></div><span className="button-text">View case</span></Link>
