@@ -1,25 +1,35 @@
 .footer {
-  padding: var(--spacerMobile);
+  padding: 2rem var(--spacerMobile);
   background-color: var(--colorDark);
   color: var(--colorLight);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-item {
-  margin: 1.3rem 0;
+.footer-menu {
+  color: #fff;
 }
 
 .socials-footer {
+  margin-bottom: 2rem;
   a {
-    color: #fff!important;
-    font-size: 2rem;
-    padding: .5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .2rem;
+    margin-right: .75rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 2rem 3rem;
+      flex-direction: row;
   }
+  .socials-footer {
+    margin-bottom: 0;
+  } 
 }
 
 @media only screen and (min-width: 1024px) {
