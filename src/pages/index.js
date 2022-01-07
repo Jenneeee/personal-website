@@ -33,9 +33,11 @@ export default function Home() {
     <Seo title="Home" />
     <Header />
     <div className="homeWrapper">
-      <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
-      <Link className="button" to="/about"><div className="button-arrow"><Arrow /></div><span className="button-text">More about me</span></Link>
-      
+      <div className="home-intro">
+        <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
+        <Link className="button" to="/about"><div className="button-arrow"><Arrow /></div><span className="button-text">More about me</span></Link>
+      </div>
+      <div className="selected-cases">
       {projects.map(({ node: project }) => {
         const title = project.title;
         const description = project.description;
@@ -45,7 +47,7 @@ export default function Home() {
         return (
           <Case key={slug} title={title} description={description} slug={slug} image={image} />
         )
-      })}
+      })}</div>
     </div>
     <Footer />
   </div>)

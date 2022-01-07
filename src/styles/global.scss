@@ -32,8 +32,9 @@ body {
 }
 
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  transition: .4s;
   
   .button-text {
     margin-left: var(--spacerSmall);
@@ -84,4 +85,13 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
+  .button {
+    &:hover {
+      margin-left: .75rem;
+      transition: .4s;
+      .svg--circle {
+        fill: var(--colorAccent);
+      }
+    }
+  }
 }

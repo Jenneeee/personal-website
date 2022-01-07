@@ -1,5 +1,5 @@
 .homeWrapper {
-  padding: var(--spacerMobile);
+  margin: var(--spacerMobile);
   margin-top: 3rem;
 }
 
@@ -7,10 +7,14 @@
   .homeWrapper {
     margin: 2rem 3rem;
   }
+
+  .home-intro {
+    padding: 3rem 0rem
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .homeWrapper {
-    margin: 3rem 5rem;
+    margin: 2rem 5rem;
   }
 }
