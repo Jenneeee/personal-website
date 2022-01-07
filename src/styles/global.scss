@@ -76,6 +76,13 @@ h3 {
   margin-bottom: var(--spacerSmall);
 }
 
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--colorLightGray);
+  line-height: 1.9rem;
+}
+
 p {
   color: var(--colorGray);
   line-height: 1.9rem;
@@ -87,7 +94,7 @@ p {
 @media only screen and (min-width: 1024px) {
   .button {
     &:hover {
-      margin-left: .75rem;
+      padding-left: .75rem;
       transition: .4s;
       .svg--circle {
         fill: var(--colorAccent);

@@ -8,7 +8,7 @@ export default function Case({ title, description, image }) {
   return (
   <section className="case-wrapper">
     <GatsbyImage image={image} alt={title}/>
-    <p>{description}</p>
+    <h4>{description}</h4>
     <h3>{title}</h3>
     <Link className="button" to="/"><div className="button-arrow"><Arrow /></div><span className="button-text">View case</span></Link>
   </section>)

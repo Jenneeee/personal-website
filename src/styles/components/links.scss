@@ -1,0 +1,30 @@
+.quick-links-wrapper {
+    padding-bottom: 6rem;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9rem;
+}
+
+.quick-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    .active {
+        text-decoration: line-through;
+        color: var(--colorLightGray);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .quick-links {
+        gap: 1.5rem;
+    }
+
+    .quick-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    }
+}

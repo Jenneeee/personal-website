@@ -5,6 +5,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Arrow from '../icons/arrow'
 import Case from '../components/case'
+import Links from '../components/links'
 import { graphql, useStaticQuery } from "gatsby"
 import '../styles/pages/index.scss'
 
@@ -48,6 +49,7 @@ export default function Home() {
           <Case key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}</div>
+    <Links />
     </div>
     <Footer />
   </div>)
