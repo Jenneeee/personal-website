@@ -1,3 +1,36 @@
 .case-wrapper {
     margin: 5rem 0;
 }
+
+@media only screen and (min-width: 768px) {
+    .case-wrapper {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    .case-image {
+        width: 50%;
+    }
+
+    .case-text {
+        width: 22rem;
+        margin-left: 4rem;
+    }
+
+    .case-wrapper:nth-child(2) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .case-text {
+            margin-left: 0;
+            margin-right: 4rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .case-image {
+        width: 47%;
+    }
+}

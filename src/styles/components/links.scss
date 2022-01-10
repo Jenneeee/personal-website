@@ -1,5 +1,5 @@
 .quick-links-wrapper {
-    padding-bottom: 6rem;
+    margin: 6rem var(--spacerMobile);
 }
 
 .quick-links {
@@ -19,6 +19,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .quick-links-wrapper {
+        margin: 6rem 3rem;
+    }
+
     .quick-links {
         gap: 1.5rem;
     }
@@ -26,5 +30,12 @@
     .quick-link {
     font-size: 1.5rem;
     font-weight: 600;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .quick-links-wrapper {
+        margin: 7rem 5rem;
     }
 }

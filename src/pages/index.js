@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from 'gatsby'
 import Seo from "../components/seo"
 import Header from '../components/header'
-import Footer from '../components/footer'
-import Arrow from '../icons/arrow'
 import Case from '../components/case'
 import Links from '../components/links'
+import Footer from '../components/footer'
+import Arrow from '../icons/arrow'
 import { graphql, useStaticQuery } from "gatsby"
 import '../styles/pages/index.scss'
 
-export default function Home() {
+export default function Cases() {
   const data = useStaticQuery(graphql`
   {
     allProjectsJson {
@@ -31,7 +31,7 @@ export default function Home() {
   const projects = data.allProjectsJson.edges;
   return (
   <div>
-    <Seo title="Home" />
+    <Seo title="Cases" />
     <Header />
     <div className="homeWrapper">
       <div className="home-intro">
@@ -49,8 +49,8 @@ export default function Home() {
           <Case key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}</div>
-    <Links />
     </div>
+    <Links />
     <Footer />
   </div>)
 }

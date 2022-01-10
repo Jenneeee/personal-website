@@ -37,8 +37,7 @@ export default function Header() {
     <div className={`menu ${navbarOpen ? 'open' : ''}`}>
         <nav className="navigation">
             <ul className="navList">
-                <li className='navlink'><Link to="/" activeClassName="active" onClick={() => closeMenu()}>Home</Link></li>
-                <li className='navlink'><Link to="/portfolio" activeClassName="active" onClick={() => closeMenu()}>Portfolio</Link></li>
+                <li className='navlink'><Link to="/" activeClassName="active" onClick={() => closeMenu()}>Cases</Link></li>
                 <li className='navlink'><Link to="/about" activeClassName="active" onClick={() => closeMenu()}>About</Link></li>
                 <li className='navlink'><Link to="/contact" activeClassName="active" onClick={() => closeMenu()}>Contact</Link></li>
             </ul>
