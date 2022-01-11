@@ -29,10 +29,14 @@
 }
 
 .form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     resize: none;
     outline: none;
     font-family: aktiv-grotesk, sans-serif;
     border: 0;
+    border-radius: none;
     border-bottom: 2px solid #e1e1e1;
     padding: 10px 15px 10px 10px;
     background: 0 0;
@@ -46,10 +50,6 @@
     &:focus {
       border-bottom: 2px solid var(--colorDark);
     }
-
-    &:not(:placeholder-shown) {
-      border-color: var(--colorDark);
-    }
 }
 
 .form-input:not(:placeholder-shown) + .form-span{
@@ -58,6 +58,9 @@
 }
 
 .form-submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 1rem;
   background-color: var(--colorDark);
   color: var(--colorLight);
