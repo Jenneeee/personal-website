@@ -1,11 +1,14 @@
 .contact-wrapper {
   margin: var(--spacerMobile);
   padding-top: 1.5rem;
-  max-width: 50rem;
 }
 
 .contact-form {
   margin: 4rem 0;
+}
+
+.contact-type:not(:first-child) {
+  margin-top: 1.5rem;
 }
 
 .form-label {
@@ -29,27 +32,25 @@
 }
 
 .form-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    resize: none;
-    outline: none;
-    font-family: aktiv-grotesk, sans-serif;
-    border: 0;
-    border-radius: none;
-    border-bottom: 2px solid #e1e1e1;
-    padding: 10px 15px 10px 10px;
-    background: 0 0;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: var(--colorDark);
-    white-space: pre-wrap; 
-    position: relative;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  -webkit-appearance: none;
+  resize: none;
+  outline: none;
+  font-family: aktiv-grotesk, sans-serif;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #e1e1e1;
+  padding: 10px 15px 10px 10px;
+  background: 0 0;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: var(--colorDark);
+  white-space: pre-wrap; 
+  position: relative;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
-    &:focus {
-      border-bottom: 2px solid var(--colorDark);
-    }
+  &:focus {
+    border-bottom: 2px solid var(--colorDark);
+  }
 }
 
 .form-input:not(:placeholder-shown) + .form-span{
@@ -73,11 +74,23 @@
     margin: 0 3rem;
     padding-top: 4rem;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
   .contact-wrapper {
     margin: 0 5rem;
     padding-top: 6rem;
+
+  }
+
+  .contact-socials-wrapper {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    gap: 5rem;
+  }
+
+  .contact-socials {
+    justify-self: center;
   }
 }

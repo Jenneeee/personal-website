@@ -12,34 +12,46 @@ export default function Contact() {
     <Header />
     <div className="contact-wrapper">
       <h2>Get in touch.</h2>
-      <p>Say hello! Whether it’s a chat about anything design or development related or a potential project or opportunity you may have in mind, hit me up.</p>
-      <form className="contact-form" action="" method="post">
+      <div className="contact-socials-wrapper">
         <div>
-          <label className="form-label">
-            <input className="form-input" type="text" placeholder=" " required />
-            <span className="form-span">Your name</span>
-          </label>
+          <p>Say hello! Whether it’s a chat about anything design or development related or a potential project or opportunity you may have in mind, hit me up.</p>
+          <form className="contact-form" action="" method="post">
+            <div>
+              <label className="form-label">
+                <input className="form-input" type="text" placeholder=" " required />
+                <span className="form-span">Your name</span>
+              </label>
+            </div>
+            <div>
+              <label className="form-label">
+                <input className="form-input" type="email" placeholder=" " required />
+                <span className="form-span">Your email</span>
+              </label>
+            </div>
+            <div>
+              <label className="form-label">
+                <input className="form-input" type="text" placeholder=" " required />
+                <span className="form-span">Subject</span>
+              </label>
+            </div>
+            <div>
+              <label className="form-label">
+                <textarea className="form-input" rows="5" placeholder=" " required />
+                <span className="form-span">Message</span>
+              </label>
+            </div>
+            <input className="form-submit" type="submit" value="Send message" />
+          </form>
         </div>
-        <div>
-          <label className="form-label">
-            <input className="form-input" type="email" placeholder=" " required />
-            <span className="form-span">Your email</span>
-          </label>
+        <div className="contact-socials">
+          <h4 className="contact-type">Email</h4>
+          <p><a href="mailto:jenne@cattoor.net">jenne@cattoor.net</a></p>
+          <h4 className="contact-type">Social media</h4>
+          <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">Instagram</a></p>
+          <p><a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer">Dribbble</a></p>
+          <p><a href="https://github.com/Jenneeee" target="_blank" rel="noreferrer">GitHub</a></p>
         </div>
-        <div>
-          <label className="form-label">
-            <input className="form-input" type="text" placeholder=" " required />
-            <span className="form-span">subject</span>
-          </label>
-        </div>
-        <div>
-          <label className="form-label">
-            <textarea className="form-input" rows="5" placeholder=" " required />
-            <span className="form-span">Message</span>
-          </label>
-       </div>
-        <input className="form-submit" type="submit" value="Send message" />
-      </form>
+      </div>
     </div>
     <Links />
     <Footer />
