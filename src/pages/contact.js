@@ -21,6 +21,7 @@ export default function Contact() {
               <label className="form-label">
                 <input className="form-input" type="text" placeholder=" " name="name" required />
                 <span className="form-span">Your name</span>
+                <span className="form-error">This is an error message</span>
               </label>
             </div>
             <div>

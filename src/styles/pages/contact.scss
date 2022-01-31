@@ -17,7 +17,7 @@
   flex-direction: column;
   margin-bottom: var(--spacerMedium);
 
-  span {
+  .form-span {
     font-size: 1rem;
     color: var(--colorLightGray);
     position:absolute;
@@ -25,7 +25,7 @@
     transform:translate(10px, 10px);
   }
 
-  &:focus-within span {
+  &:focus-within .form-span {
     font-size: .8rem;
     transform:translate(10px, -5px);
   }
@@ -56,6 +56,13 @@
 .form-input:not(:placeholder-shown) + .form-span{
   font-size: .8rem;
   transform:translate(10px, -5px);
+}
+
+.form-error {
+  color: #ff0033;
+  font-size: 14px;
+  margin-top: -1rem;
+  padding-left: 10px;
 }
 
 .form-submit {
