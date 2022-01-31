@@ -3,6 +3,7 @@ import Seo from "../components/seo"
 import Header from '../components/header'
 import Links from '../components/links'
 import Footer from '../components/footer'
+import Send from '../icons/send'
 import '../styles/pages/contact.scss'
 
 export default function Contact() {
@@ -40,7 +41,9 @@ export default function Contact() {
                 <span className="form-span">Message</span>
               </label>
             </div>
-            <input className="form-submit" type="submit" value="Send message" />
+            <div>
+              <input className="form-submit" type="submit" value="Send message" /><Send />
+            </div>
           </form>
         </div>
         <div className="contact-socials">

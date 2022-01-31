@@ -65,7 +65,7 @@ li, a {
 h2 {
   line-height: 3rem;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 1.5rem 0;
 }
 
@@ -90,12 +90,18 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  
   body {
   font-size: 18px;
-}
+  }
+
+  h2 {
+  font-size: 2.25rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+
   .button {
     &:hover {
       padding-left: .75rem;

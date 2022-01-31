@@ -69,6 +69,10 @@
   border: none;
 }
 
+.svg-message {
+  width: 1.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   .contact-wrapper {
     margin: 0 3rem;
@@ -81,7 +85,6 @@
   .contact-wrapper {
     margin: 0 5rem;
     padding-top: 6rem;
-
   }
 
   .contact-socials-wrapper {
