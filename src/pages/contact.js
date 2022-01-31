@@ -15,7 +15,7 @@ export default function Contact() {
       <h2>Get in touch.</h2>
       <div className="contact-socials-wrapper">
         <div>
-          <p>Say hello! Whether it’s a chat about anything design or development related or a potential project or opportunity you may have in mind, hit me up.</p>
+          <p>I'd love to hear from you! If you'd like to chat about design or development, or if you have a potential project or opportunity in mind, let's talk.</p>
           <form className="contact-form" action="" method="post">
             <div>
               <label className="form-label">
@@ -41,9 +41,7 @@ export default function Contact() {
                 <span className="form-span">Message</span>
               </label>
             </div>
-            <div>
-              <input className="form-submit" type="submit" value="Send message" /><Send />
-            </div>
+              <button className="form-submit">Send message <Send /></button>
           </form>
         </div>
         <div className="contact-socials">
