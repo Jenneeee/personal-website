@@ -16,32 +16,32 @@ export default function Contact() {
       <div className="contact-socials-wrapper">
         <div>
           <p>I'd love to hear from you! If you'd like to chat about design or development, or if you have a potential project or opportunity in mind, let's talk.</p>
-          <form className="contact-form" action="" method="post">
+          <form className="contact-form" method="post" action="https://www.flexyform.com/f/991dc242d3a4e62f38823587dc8a62657d85f435">
             <div>
               <label className="form-label">
-                <input className="form-input" type="text" placeholder=" " required />
+                <input className="form-input" type="text" placeholder=" " name="name" required />
                 <span className="form-span">Your name</span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <input className="form-input" type="email" placeholder=" " required />
+                <input className="form-input" type="email" placeholder=" " name="email" required />
                 <span className="form-span">Your email</span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <input className="form-input" type="text" placeholder=" " required />
+                <input className="form-input" type="text" placeholder=" " name="subject" required />
                 <span className="form-span">Subject</span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <textarea className="form-input" rows="5" placeholder=" " required />
+                <textarea className="form-input" rows="5" placeholder=" " name="message" required />
                 <span className="form-span">Message</span>
               </label>
             </div>
-              <button className="form-submit">Send message <Send /></button>
+              <button type="submit" className="form-submit">Send message <Send /></button>
           </form>
         </div>
         <div className="contact-socials">
@@ -50,6 +50,7 @@ export default function Contact() {
           <h4 className="contact-type">Social media</h4>
           <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">Instagram</a></p>
           <p><a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer">Dribbble</a></p>
+          <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">LinkedIn</a></p>
           <p><a href="https://github.com/Jenneeee" target="_blank" rel="noreferrer">GitHub</a></p>
         </div>
       </div>
