@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Links from '../components/links'
 import Footer from '../components/footer'
 
-export default function About() {
+export default function About () {
   return (
   <div>
     <Seo title="About" />

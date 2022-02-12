@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Links from '../components/links'
 import Footer from '../components/footer'
 
-export default function Error() {
+export default function Error () {
   return (
   <div>
     <Seo title="Page not found" />

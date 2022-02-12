@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faDribbble, faLinkedinin, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faDribbble, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import '../styles/components/header.scss'
 
-export default function Header() {
+export default function Header () {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     const handleToggle = () => {

@@ -8,7 +8,7 @@ import Links from '../components/links'
 import Footer from '../components/footer'
 import '../styles/pages/success.scss'
 
-export default function Success() {
+export default function Success () {
   return (
   <div>
     <Seo title="Contact" />

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import '../styles/components/links.scss'
 
-export default function links() {
+export default function links () {
   return (
   <section className="quick-links-wrapper">
     <h4>Quick links</h4>

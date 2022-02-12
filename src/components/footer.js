@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faDribbble, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import '../styles/components/footer.scss'
 
-export default function Footer() {
+export default function Footer () {
   const year = new Date().getFullYear();
   return (
   <footer className="footer">

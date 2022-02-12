@@ -1,4 +1,4 @@
-.homeWrapper {
+.home-wrapper {
   margin: var(--spacerMobile);
 }
 
@@ -7,7 +7,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .homeWrapper {
+  .home-wrapper {
     margin: 0 3rem;
   }
 
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .homeWrapper {
+  .home-wrapper {
     margin: 0 5rem;
   }
 

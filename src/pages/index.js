@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from 'gatsby'
 import Seo from "../components/seo"
 import Header from '../components/header'
-import Case from '../components/case'
+import Cases from '../components/cases'
 import Links from '../components/links'
 import Footer from '../components/footer'
 import Arrow from '../icons/arrow'
 import { graphql, useStaticQuery } from "gatsby"
 import '../styles/pages/index.scss'
 
-export default function Cases() {
+export default function Index () {
   const data = useStaticQuery(graphql`
   {
     allProjectsJson {
@@ -33,7 +33,7 @@ export default function Cases() {
   <div>
     <Seo title="Multidisciplinary designer and front-end developer" />
     <Header />
-    <div className="homeWrapper">
+    <div className="home-wrapper">
       <div className="home-intro">
         <h2>A young UI/UX Designer & Front-end developer based in Belgium.</h2>
         <Link className="button" to="/about"><div className="button-arrow"><Arrow /></div><span className="button-text">More about me</span></Link>
@@ -46,7 +46,7 @@ export default function Cases() {
         const image = project.image.childImageSharp.gatsbyImageData;
 
         return (
-          <Case key={slug} title={title} description={description} slug={slug} image={image} />
+          <Cases key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}</div>
     </div>

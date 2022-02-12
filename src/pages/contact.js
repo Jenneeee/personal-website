@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import Send from '../icons/send'
 import '../styles/pages/contact.scss'
 
-export default function Contact() {
+export default function Contact () {
   
   const handleSubmitForm = e => {
       e.preventDefault();
