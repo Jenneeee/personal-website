@@ -7,6 +7,39 @@ import Send from '../icons/send'
 import '../styles/pages/contact.scss'
 
 export default function Contact() {
+  
+  const handleSubmitForm = e => {
+      e.preventDefault();
+      const inputs = document.querySelectorAll(`.form-input`);
+      inputs.forEach($input => showValidationInfo($input));
+  };
+
+  const handleInputField = e => {
+    const $input = e.currentTarget;
+    const $error = $input.parentElement.querySelector(`.form-error`);
+    if ($input.checkValidity()) {
+      $error.innerHTML = ``;
+    }
+  };
+
+  const showValidationInfo = $input => {
+    const $error = $input.parentElement.querySelector(`.form-error`);
+
+    if ($input.validity.valueMissing) {
+      $error.innerHTML = `&#10006 This field is mandatory`;
+    }
+    if ($input.validity.typeMismatch) {
+      $error.innerHTML = `&#10006 We're expecting a valid e-mailadres`;
+    }
+  };
+
+  const handleBlurInput = e => {
+    showValidationInfo(e.currentTarget);
+  };
+
+
+
+
   return (
   <div>
     <Seo title="Contact" />
@@ -19,29 +52,33 @@ export default function Contact() {
           <form className="contact-form" method="post" action="https://www.flexyform.com/f/991dc242d3a4e62f38823587dc8a62657d85f435">
             <div>
               <label className="form-label">
-                <input className="form-input" type="text" placeholder=" " name="name" required />
+                <input className="form-input" type="text" placeholder=" " name="name" required onBlur={handleBlurInput} onInput={handleInputField} />
                 <span className="form-span">Your name</span>
+                <span className="form-error"></span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <input className="form-input" type="email" placeholder=" " name="email" required />
+                <input className="form-input" type="email" placeholder=" " name="email" required onBlur={handleBlurInput} onInput={handleInputField} />
                 <span className="form-span">Your email</span>
+                <span className="form-error"></span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <input className="form-input" type="text" placeholder=" " name="subject" required />
+                <input className="form-input" type="text" placeholder=" " name="subject" required onBlur={handleBlurInput} onInput={handleInputField} />
                 <span className="form-span">Subject</span>
+                <span className="form-error"></span>
               </label>
             </div>
             <div>
               <label className="form-label">
-                <textarea className="form-input" rows="5" placeholder=" " name="message" required />
+                <textarea className="form-input" rows="5" placeholder=" " name="message" required onBlur={handleBlurInput} onInput={handleInputField} />
                 <span className="form-span">Message</span>
+                <span className="form-error"></span>
               </label>
             </div>
-              <button type="submit" className="form-submit">Send message <Send /></button>
+              <button type="submit" className="form-submit" onMouseDown={handleSubmitForm} >Send message <Send /></button>
           </form>
         </div>
         <div className="contact-socials">

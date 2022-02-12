@@ -59,10 +59,16 @@
 }
 
 .form-error {
-  color: #ff0033;
+  color: #da4453;
   font-size: 14px;
   margin-top: -1rem;
   padding-left: 10px;
+}
+
+.icon-error {
+  fill: #da4453;
+  max-width: 11px;
+  margin-right: 6px;
 }
 
 .form-submit {
@@ -74,6 +80,10 @@
   color: var(--colorLight);
   padding: 1rem 2rem;
   border: none;
+
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .svg-message {
