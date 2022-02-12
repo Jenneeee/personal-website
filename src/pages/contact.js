@@ -21,7 +21,6 @@ export default function Contact() {
               <label className="form-label">
                 <input className="form-input" type="text" placeholder=" " name="name" required />
                 <span className="form-span">Your name</span>
-                <span className="form-error">This is an error message</span>
               </label>
             </div>
             <div>
@@ -51,7 +50,7 @@ export default function Contact() {
           <h4 className="contact-type">Social media</h4>
           <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">Instagram</a></p>
           <p><a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer">Dribbble</a></p>
-          <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/jennecattoor" target="_blank" rel="noreferrer">LinkedIn</a></p>
           <p><a href="https://github.com/Jenneeee" target="_blank" rel="noreferrer">GitHub</a></p>
         </div>
       </div>

@@ -31,7 +31,7 @@ export default function Cases() {
   const projects = data.allProjectsJson.edges;
   return (
   <div>
-    <Seo title="Cases" />
+    <Seo title="Multidisciplinary designer and front-end developer" />
     <Header />
     <div className="homeWrapper">
       <div className="home-intro">

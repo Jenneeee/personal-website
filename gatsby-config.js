@@ -17,9 +17,9 @@ module.exports = {
   ],
   siteMetadata: {
     title: `Jenne Cattoor`,
-    description: `Hi i'm Jenne. A UI/UX designer and front-end developer. I sometimes make websites`,
+    description: `The portfolio of Jenne Cattoor, a multidisciplinary designer and front-end developer based in Belgium. Creating digital experiences and visual identities.`,
     author: `Jenne Cattoor`,
-    keywords: `jenne cattoor, designer, developer, freelance, ui ux, front-end developer, portfolio`,
+    keywords: `jenne cattoor, portfolio, designer, developer, freelance, ui, ux, front-end developer, digital experiences, visual identities`,
     url: "https://www.jennecattoor.com",
   },
 }
