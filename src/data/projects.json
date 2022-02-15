@@ -3,12 +3,12 @@
         "title": "01: Making a Google Doodle",
         "description": "School Project",
         "image": "../data/images/project1.jpg",
-        "slug": "project-1"
+        "slug": "google-doodle"
     },
     {
         "title": "02: Designing a conference website",
         "description": "School Project",
         "image": "../data/images/project2.jpg",
-        "slug": "project-2"
+        "slug": "conference-website"
     }
 ]
