@@ -6,14 +6,16 @@
     margin-top: 3rem;
 }
 
+.case-right {
+    margin-top: 3rem;
+}
+
 .case-number {
     font-size: 24vw;
     font-weight: 600;
     color: #f5f5f5;
-}
-
-.case-image {
-    margin-top: -1.4rem;
+    text-align: center;
+    line-height: 76%;
 }
 
 .case-title {
@@ -30,8 +32,13 @@
     margin: 4rem 0;
 }
 
+.case-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .case-link {
-    margin-right: 6rem;
+    margin: 0 3rem 2rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -54,7 +61,8 @@
 
     .case-top-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45% 1fr;
+        gap: 5rem;
     }
 
     .case-right {
@@ -62,12 +70,7 @@
     }
 
     .case-number {
-        font-size: 10.9vw;
-    }
-
-    .case-image {
-        width: 90%;
-        margin-top: -1.4rem;
+        font-size: 10vw;
     }
 
     .case-info {

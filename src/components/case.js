@@ -4,7 +4,6 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import '../styles/components/case.scss'
 
 export default function Case ({ caseNumber, title, subTitle, description, platform, category, year, tools, links, coverImage }) {
-  console.log(links)
   return (
     <div className="case-wrapper">
       <div className="case-top-wrapper">
@@ -35,7 +34,7 @@ export default function Case ({ caseNumber, title, subTitle, description, platfo
             <p>{tools}</p>
           </div>
           <div className="case-links">
-            {links.map(link => <a href={link.url} target="_blank" rel="noreferrer" className="button case-link"><div className="button-arrow"><Arrow /></div><span className="button-text">{link.name}</span></a>)}
+            {links.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noreferrer" className="button case-link"><div className="button-arrow"><Arrow /></div><span className="button-text">{link.name}</span></a>)}
           </div>
         </div>
       </div>

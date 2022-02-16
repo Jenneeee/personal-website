@@ -33,6 +33,12 @@
         "platform": "Web / Mobile",
         "category": "Design",
         "year": "2021",
-        "tools": "Figma / Adobe Illustrator"
+        "tools": "Figma / Adobe Illustrator",
+        "links": [
+            {
+                "name": "See on Dribbble",
+                "url": "https://dribbble.com/Cattoor"
+            }
+        ]
     }
 ]
