@@ -3,7 +3,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allProjectsJson {
         edges {
-          node {    
+          node {
             slug
           }
         }
@@ -22,11 +22,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const slug = project.slug;
 
     actions.createPage({
-      path: `cases/${slug}`,
+      path: `cases/${slug}/`,
       component: require.resolve('./src/templates/case.js'),
-      context: {
-        slug: slug,
-      }
+      context: { slug }
     });
   });
 };
