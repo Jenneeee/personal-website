@@ -7,7 +7,7 @@ import '../styles/components/case-preview.scss'
 export default function CasePreview ({ caseNumber, title, subTitle, coverImage, slug }) {
   return (
   <section className="case-preview-wrapper">
-    <GatsbyImage className="case-preview-image" image={coverImage} alt={title}/>
+    <Link className="case-preview-image" to={`cases/${slug}`}><GatsbyImage image={coverImage} alt={title}/></Link>
     <div className="case-preview-text">
       <h4>{subTitle}</h4>
       <h3 className="case-preview-title">{caseNumber}: {title}</h3>
