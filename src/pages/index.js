@@ -15,10 +15,11 @@ export default function Index () {
     allProjectsJson {
       edges {
         node {
+          caseNumber
           title
-          description
+          subTitle
           slug
-          image {
+          coverImage {
             childImageSharp {
               gatsbyImageData
             }
@@ -40,13 +41,14 @@ export default function Index () {
       </div>
       <div className="selected-cases">
       {projects.map(({ node: project }) => {
+        const caseNumber = project.caseNumber;
         const title = project.title;
-        const description = project.description;
+        const description = project.subTitle;
         const slug = project.slug;
-        const image = project.image.childImageSharp.gatsbyImageData;
+        const image = project.coverImage.childImageSharp.gatsbyImageData;
 
         return (
-          <CasePreview key={slug} title={title} description={description} slug={slug} image={image} />
+          <CasePreview caseNumber={caseNumber} key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}</div>
     </div>

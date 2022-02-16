@@ -1,14 +1,16 @@
 [
     {
-        "title": "01: Making a Google Doodle",
-        "description": "School Project",
-        "image": "../data/images/project1.jpg",
+        "caseNumber": "01",
+        "title": "Making a Google Doodle",
+        "subTitle": "School Project",
+        "coverImage": "../data/images/project1.jpg",
         "slug": "google-doodle"
     },
     {
-        "title": "02: Designing a conference website",
-        "description": "School Project",
-        "image": "../data/images/project2.jpg",
+        "caseNumber": "02",
+        "title": "Designing a conference website",
+        "subTitle": "School Project",
+        "coverImage": "../data/images/project2.jpg",
         "slug": "conference-website"
     }
 ]

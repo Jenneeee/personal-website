@@ -9,22 +9,25 @@ import Footer from '../components/footer'
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
+      caseNumber
       title
-      description
+      subTitle
     }
   }
 `;
 
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson;
+  const caseNumber = project.caseNumber
   const title = project.title;
-  const description = project.description;
+  const description = project.subTitle;
 
   return (
     <>
-      <Seo title="Page not found" />
+      <Seo title={title} />
       <Header />
       <Case
+        caseNumber={caseNumber}
         title={title}
         description={description}
       />

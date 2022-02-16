@@ -2,12 +2,12 @@ import React from "react"
 import Arrow from '../icons/arrow'
 import '../styles/components/case.scss'
 
-export default function Case ({ title, description }) {
+export default function Case ({ caseNumber, title, description }) {
   return (
     <div className="case-wrapper">
       <div className="case-top-wrapper">
         <div className="case-left">
-          <h5 className="case-number"> Case 01</h5>
+          <h5 className="case-number">Case {caseNumber}</h5>
         </div>
         <div className="case-right">
           <h4 className="">{description}</h4>
