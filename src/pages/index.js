@@ -43,12 +43,12 @@ export default function Index () {
       {projects.map(({ node: project }) => {
         const caseNumber = project.caseNumber;
         const title = project.title;
-        const description = project.subTitle;
+        const subTitle = project.subTitle;
+        const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
         const slug = project.slug;
-        const image = project.coverImage.childImageSharp.gatsbyImageData;
 
         return (
-          <CasePreview caseNumber={caseNumber} key={slug} title={title} description={description} slug={slug} image={image} />
+          <CasePreview caseNumber={caseNumber} key={slug} title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} />
         )
       })}</div>
     </div>

@@ -3,7 +3,7 @@
 }
 
 .case-top-wrapper {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .case-number {
@@ -12,8 +12,12 @@
     color: #f5f5f5;
 }
 
-.case-right {
-    margin-top: 12rem;
+.case-image {
+    margin-top: -1.4rem;
+}
+
+.case-title {
+    margin-bottom: 1rem;
 }
 
 .case-info {
@@ -24,6 +28,10 @@
 
 .case-tools {
     margin: 4rem 0;
+}
+
+.case-link {
+    margin-right: 6rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,8 +57,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .case-right {
+        margin-top: 10rem;
+    }
+
     .case-number {
         font-size: 10.9vw;
+    }
+
+    .case-image {
+        width: 90%;
+        margin-top: -1.4rem;
     }
 
     .case-info {

@@ -2,6 +2,10 @@
     margin: 5rem 0;
 }
 
+.case-preview-title {
+    margin-bottom: var(--spacerSmall);
+}
+
 @media only screen and (min-width: 768px) {
     .case-preview-wrapper {
         margin: 2rem 0;

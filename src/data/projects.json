@@ -2,15 +2,37 @@
     {
         "caseNumber": "01",
         "title": "Making a Google Doodle",
+        "titleShort": "Google Doodle",
         "subTitle": "School Project",
         "coverImage": "../data/images/project1.jpg",
-        "slug": "google-doodle"
+        "slug": "google-doodle",
+        "description": "The assignment was to create a google doodle. Choose out a special day of the year that you like and animate it into a finished product",
+        "platform": "Web / Mobile",
+        "category": "Animation",
+        "year": "2021",
+        "tools": "Adobe Illustrator / Adobe After Effects",
+        "links": [
+            {
+                "name": "See on Dribbble",
+                "url": "https://dribbble.com/Cattoor"
+            },
+            {
+                "name": "See on Behance",
+                "url": "https://dribbble.com/Cattoor"
+            }
+        ]
     },
     {
         "caseNumber": "02",
         "title": "Designing a conference website",
+        "titleShort": "Conference website",
         "subTitle": "School Project",
         "coverImage": "../data/images/project2.jpg",
-        "slug": "conference-website"
+        "slug": "conference-website",
+        "description": "Conference Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "platform": "Web / Mobile",
+        "category": "Design",
+        "year": "2021",
+        "tools": "Figma / Adobe Illustrator"
     }
 ]
