@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import Seo from "../components/seo"
 import Header from '../components/header'
-import Cases from '../components/cases'
+import CasePreview from '../components/case-preview'
 import Links from '../components/links'
 import Footer from '../components/footer'
 import Arrow from '../icons/arrow'
@@ -46,7 +46,7 @@ export default function Index () {
         const image = project.image.childImageSharp.gatsbyImageData;
 
         return (
-          <Cases key={slug} title={title} description={description} slug={slug} image={image} />
+          <CasePreview key={slug} title={title} description={description} slug={slug} image={image} />
         )
       })}</div>
     </div>

@@ -15,7 +15,7 @@ export default function Success () {
     <Header />
     <div className="success-wrapper">
       <Check />
-      <h2>Message sent!</h2>
+      <h2 className="success-title">Message sent!</h2>
       <p>It's great to hear from you! Your message has been successfully received and I will respond as soon as possible. In general, I respond within 24 hours.</p>
       <Link className="button success-button" to="/contact"><div className="button-arrow"><Arrow /></div><span className="button-text">Go back</span></Link>
     </div>

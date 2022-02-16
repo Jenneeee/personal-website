@@ -45,7 +45,7 @@ export default function Contact () {
     <Seo title="Contact" />
     <Header />
     <div className="contact-wrapper">
-      <h2>Get in touch.</h2>
+      <h2 className="contact-title">Get in touch.</h2>
       <div className="contact-socials-wrapper">
         <div>
           <p>I'd love to hear from you! If you'd like to chat about design or development, or if you have a potential project or opportunity in mind, let's talk.</p>
