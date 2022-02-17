@@ -43,6 +43,19 @@
     margin-bottom: 2rem;
 } 
 
+.case-image {
+    margin: 2rem 0;
+}
+
+.case-text {
+    max-width: 40rem;
+    margin: 2rem 0;
+
+    .case-text-title {
+        margin-bottom: .4rem;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
     .case-wrapper {
@@ -53,6 +66,11 @@
         font-size: 22.5vw;
     }
 
+    .case-text-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

@@ -4,10 +4,10 @@
         "title": "Making a Google Doodle",
         "titleShort": "Google Doodle",
         "subTitle": "School Project",
-        "coverImage": "../data/images/project1.jpg",
+        "coverImage": "../data/images/case1/cover-image.jpg",
         "slug": "google-doodle",
-        "description": "The assignment was to create a google doodle. Choose out a special day of the year that you like and animate it into a finished product",
-        "platform": "Web / Mobile",
+        "description": "As part of our school class Motion, I received the assignment to create a Google Doodle. When you open Google, you often see one without even noticing it. It's a fun way to remind people of a special day in history.",
+        "client": "N/A - School",
         "category": "Animation",
         "year": "2021",
         "tools": "Adobe Illustrator / Adobe After Effects",
@@ -20,6 +20,29 @@
                 "name": "See on Behance",
                 "url": "https://dribbble.com/Cattoor"
             }
+        ],
+        "challenge": "The assignment was to create a Google Doodle for a meaningful event/day in the future. My favourite show at the time was Drive to Survive, so I chose something F1-related. There's no denying that F1 is awesome.",
+        "approach": "I started by sketching out some ideas on paper. As we only had a limited amount of time, I wanted to create something interesting but simple. Because details take time, I chose a flat illustration of the F1 car. After I finished the illustration, I went ahead and put it all together in After Effects",
+        "result": "The result was a looping animation of 14 seconds. While the car slows down, the letters Google float across the car. When the car speeds up, the letters remain behind.",
+        "imagesLarge": [
+            {
+                "name": "Alt attribute large image 1",
+                "path": "../data/images/case1/large/1.jpg"
+            },
+            {
+                "name": "Alt attribute large image 2",
+                "path": "../data/images/case1/large/2.jpg"
+            }
+        ],
+        "imagesSmall": [
+            {
+                "name": "Alt attribute small image",
+                "path": "../data/images/case1/small/1.jpg"
+            },
+            {
+                "name": "Alt attribute small image",
+                "path": "../data/images/case1/small/2.jpg"
+            }
         ]
     },
     {
@@ -27,10 +50,10 @@
         "title": "Designing a conference website",
         "titleShort": "Conference website",
         "subTitle": "School Project",
-        "coverImage": "../data/images/project2.jpg",
+        "coverImage": "../data/images/case2/cover-image.jpg",
         "slug": "conference-website",
         "description": "Conference Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "platform": "Web / Mobile",
+        "client": "N/A - School",
         "category": "Design",
         "year": "2021",
         "tools": "Figma / Adobe Illustrator",

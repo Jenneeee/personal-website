@@ -3,13 +3,13 @@ import Arrow from '../icons/arrow'
 import { GatsbyImage } from "gatsby-plugin-image"
 import '../styles/components/case.scss'
 
-export default function Case ({ caseNumber, title, subTitle, description, platform, category, year, tools, links, coverImage }) {
+export default function Case ({ caseNumber, title, subTitle, description, client, category, year, tools, links, challenge, approach, result, coverImage, imagesLarge, imagesSmall }) {
   return (
     <div className="case-wrapper">
       <div className="case-top-wrapper">
         <div className="case-left">
           <h5 className="case-number">Case {caseNumber}</h5>
-          <GatsbyImage className="case-image" image={coverImage} alt={title}/>
+          <GatsbyImage image={coverImage} alt={title}/>
         </div>
         <div className="case-right">
           <h4 className="case-subtitle">{subTitle}</h4>
@@ -17,8 +17,8 @@ export default function Case ({ caseNumber, title, subTitle, description, platfo
           <p className="case-description">{description}</p>
           <div className="case-info">
             <div className="case-info-item">
-              <h3>Platform</h3>
-              <p>{platform}</p>
+              <h3>Client</h3>
+              <p>{client}</p>
             </div>
             <div className="case-info-item">
               <h3>Category</h3>
@@ -37,6 +37,22 @@ export default function Case ({ caseNumber, title, subTitle, description, platfo
             {links.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noreferrer" className="button case-link"><div className="button-arrow"><Arrow /></div><span className="button-text">{link.name}</span></a>)}
           </div>
         </div>
+      </div>
+      {imagesLarge.slice((0, 1)).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}
+      <div className="case-text-wrapper">
+        <div className="case-text">
+          <h3 className="case-text-title">The challenge</h3>
+          <p>{challenge}</p>
+        </div>
+        {imagesSmall.slice((0, 1)).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}
+      </div>
+      <div className="case-text">
+        <h3 className="case-text-title">My approach</h3>
+        <p>{approach}</p>
+      </div>
+      <div className="case-text">
+        <h3 className="case-text-title">The result</h3>
+        <p>{result}</p>
       </div>
     </div>
   )

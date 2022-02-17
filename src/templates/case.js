@@ -14,7 +14,7 @@ export const query = graphql`
       titleShort
       subTitle
       description
-      platform
+      client
       category
       year
       tools
@@ -22,9 +22,28 @@ export const query = graphql`
         name
         url
       }
+      challenge
+      approach
+      result
       coverImage {
         childImageSharp {
           gatsbyImageData
+        }
+      }
+      imagesLarge {
+        name
+        path {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+      imagesSmall {
+        name
+        path {
+          childImageSharp {
+            gatsbyImageData
+          }
         }
       }
     }
@@ -38,12 +57,17 @@ const ProjectTemplate = ({ data }) => {
   const titleShort = project.titleShort
   const subTitle = project.subTitle;
   const description = project.description;
-  const platform = project.platform;
+  const client = project.client;
   const category = project.category;
   const year = project.year;
   const tools = project.tools;
   const links = project.links;
+  const challenge = project.challenge;
+  const approach = project.approach;
+  const result = project.result;
   const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
+  const imagesLarge = project.imagesLarge;
+  const imagesSmall = project.imagesSmall;
 
   return (
     <>
@@ -54,12 +78,17 @@ const ProjectTemplate = ({ data }) => {
         title={title}
         subTitle={subTitle}
         description={description}
-        platform={platform}
+        client={client}
         category={category}
         year={year}
         tools={tools}
         links={links}
-        const coverImage = {coverImage}
+        challenge={challenge}
+        approach={approach}
+        result={result}
+        coverImage = {coverImage}
+        imagesLarge={imagesLarge}
+        imagesSmall={imagesSmall}
       />
       <Links />
       <Footer />
