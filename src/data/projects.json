@@ -70,6 +70,37 @@
                 "name": "See on Dribbble",
                 "url": "https://dribbble.com/Cattoor"
             }
+        ],
+        "challenge": "The assignment was to create a Google Doodle for a meaningful event/day in the future. My favourite show at the time was Drive to Survive, so I chose something F1-related. There's no denying that F1 is awesome.",
+        "approach": "I started by sketching out some ideas on paper. As we only had a limited amount of time, I wanted to create something interesting but simple. Because details take time, I chose a flat illustration of the F1 car. After I finished the illustration, I went ahead and put it all together in After Effects",
+        "result": "The result was a looping animation of 14 seconds. While the car slows down, the letters Google float across the car. When the car speeds up, the letters remain behind.",
+        "imagesLarge": [
+            {
+                "name": "Alt attribute large image 1",
+                "path": "../data/images/case1/large/1.jpg"
+            },
+            {
+                "name": "Alt attribute large image 2",
+                "path": "../data/images/case1/large/2.jpg"
+            },
+            {
+                "name": "Alt attribute large image 3",
+                "path": "../data/images/case1/large/3.jpg"
+            }
+        ],
+        "imagesSmall": [
+            {
+                "name": "Alt attribute small image 1",
+                "path": "../data/images/case1/small/1.jpg"
+            },
+            {
+                "name": "Alt attribute small image 2",
+                "path": "../data/images/case1/small/2.jpg"
+            },
+            {
+                "name": "Alt attribute small image 3",
+                "path": "../data/images/case1/small/3.jpg"
+            }
         ]
     }
 ]
