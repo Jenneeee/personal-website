@@ -38,21 +38,29 @@ export default function Case ({ caseNumber, title, subTitle, description, client
           </div>
         </div>
       </div>
-      {imagesLarge.slice((0, 1)).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}
+      <div>{imagesLarge.slice(0,1).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
       <div className="case-text-wrapper">
         <div className="case-text">
-          <h3 className="case-text-title">The challenge</h3>
-          <p>{challenge}</p>
+          <h4 className="case-text-title">The challenge</h4>
+          <p className="case-text-text">{challenge}</p>
         </div>
-        {imagesSmall.slice((0, 1)).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}
+        <div>{imagesSmall.slice(0,1).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
       </div>
-      <div className="case-text">
-        <h3 className="case-text-title">My approach</h3>
-        <p>{approach}</p>
+      <div>{imagesLarge.slice(1,2).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
+      <div className="case-text-wrapper">
+        <div>{imagesSmall.slice(1, 2).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
+        <div className="case-text">
+          <h4 className="case-text-title">My approach</h4>
+          <p className="case-text-text">{approach}</p>
+        </div>
       </div>
-      <div className="case-text">
-        <h3 className="case-text-title">The result</h3>
-        <p>{result}</p>
+      <div>{imagesLarge.slice(2,3).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
+      <div className="case-text-wrapper">
+        <div className="case-text">
+          <h4 className="case-text-title">The result</h4>
+          <p className="case-text-text">{result}</p>
+        </div>
+        <div>{imagesSmall.slice(2, 3).map((image, index) => <GatsbyImage key={index} className="case-image" image={image.path.childImageSharp.gatsbyImageData} alt={image.name}/>)}</div>
       </div>
     </div>
   )

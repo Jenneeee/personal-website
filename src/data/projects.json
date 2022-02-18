@@ -32,16 +32,24 @@
             {
                 "name": "Alt attribute large image 2",
                 "path": "../data/images/case1/large/2.jpg"
+            },
+            {
+                "name": "Alt attribute large image 3",
+                "path": "../data/images/case1/large/3.jpg"
             }
         ],
         "imagesSmall": [
             {
-                "name": "Alt attribute small image",
+                "name": "Alt attribute small image 1",
                 "path": "../data/images/case1/small/1.jpg"
             },
             {
-                "name": "Alt attribute small image",
+                "name": "Alt attribute small image 2",
                 "path": "../data/images/case1/small/2.jpg"
+            },
+            {
+                "name": "Alt attribute small image 3",
+                "path": "../data/images/case1/small/3.jpg"
             }
         ]
     },

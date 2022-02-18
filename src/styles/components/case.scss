@@ -49,11 +49,16 @@
 
 .case-text {
     max-width: 40rem;
-    margin: 2rem 0;
+    margin: 4rem 0;
+}
 
-    .case-text-title {
-        margin-bottom: .4rem;
-    }
+.case-text-title {
+    margin-bottom: .4rem;
+}
+
+.case-text-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -95,5 +100,16 @@
 
     .case-info {
         padding-right: 6rem;
+    }
+
+    .case-text-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 45%;
+        gap: 2rem;
+    }
+
+    .case-text-text {
+        font-size: 2.6rem;
+        line-height: 3.3rem;
     }
 }
