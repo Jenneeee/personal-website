@@ -49,8 +49,7 @@
 }
 
 .case-text {
-    max-width: 40rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 .case-text-title {
@@ -58,8 +57,8 @@
 }
 
 .case-text-text {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -76,6 +75,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+    }
+
+    .case-text {
+        max-width: 40rem;
+        margin: 4rem 0;
     }
 }
 
