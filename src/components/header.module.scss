@@ -1,7 +1,61 @@
 .header {
   margin: var(--spacerMobile);
   font-size: var(--fontMedium);
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
+
+.name {
+  color: var(--colorDark);
+}
+
+.navigation {
+
+  .navList {
+    display: flex;
+  }
+
+  .navItem {
+    padding: 0 1rem;
+  }
+
+  .navLink {
+    color: #AAA194;
+    transition: .125s;
+
+    &:hover {
+      color: var(--colorDark);
+      transition: .125s;
+    }
+
+  }
+
+  .navLinkActive {
+    color: var(--colorDark);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .header {
+    margin: 2rem 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .header {
+    margin: 2rem 4rem;
+  }
+
+}
+
+
+
+/*
 
 .title {
   font-size: 1.5rem;
@@ -11,10 +65,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.socials {
-  display: none;
 }
 
 .hamburger {
@@ -35,10 +85,11 @@
   }
 }
 
-.hamburger.open  {
+.hamburger.open {
   .bar1 {
     transform: translate3d(0, 4px, 0) rotate(45deg);
   }
+
   .bar2 {
     transform: translate3d(0, -4px, 0) rotate(-45deg);
   }
@@ -52,7 +103,7 @@
   display: inline;
 }
 
-.menu.open body{
+.menu.open body {
   overflow: hidden;
 }
 
@@ -102,26 +153,10 @@
       display: flex;
     }
 
-    .navlink {
-      margin: var(--spacerRegular);
-      padding-bottom: 2px;
-      background-image: linear-gradient(var(--colorDark), var(--colorDark));
-      background-position: 0 100%;
-      background-size: 0% 2px;
-      background-repeat: no-repeat;
-      transition: background-size 0.3s, background-position 0s 0.3s;
-
-      &:hover{
-        background-position: 100% 100%;
-        background-size: 100% 2px;
-      }
-    }
+    .nav-link {}
 
     .active {
-      background-image: linear-gradient(var(--colorDark), var(--colorDark));
-      background-position: 100% 100%;
-      background-size: 100% 2px;
-      background-repeat: no-repeat;
+      color: var(--colorDark)
     }
   }
 
@@ -139,13 +174,4 @@
   .header {
     margin: 2rem 5rem 0 5rem;
   }
-
-  .socials {
-    display: inline;
-    font-size: 1.5rem;
-
-    a {
-      margin: var(--spacerSmall);
-    }
-  }
-}
+} */

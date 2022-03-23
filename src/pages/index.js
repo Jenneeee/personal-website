@@ -36,7 +36,7 @@ export default function Index () {
     <Header />
     <div className="home-wrapper">
       <div className="home-intro">
-        <h2 className="home-intro-text">A young UI/UX Designer & Front-end developer based in Belgium.</h2>
+        <h2 className="home-intro-text">A multidisciplinary UI/UX Designer & Front-end developer based in Belgium.</h2>
         <Link className="button" to="/about"><div className="button-arrow"><Arrow /></div><span className="button-text">More about me</span></Link>
       </div>
       <div className="selected-cases">

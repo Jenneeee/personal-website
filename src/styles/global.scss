@@ -4,12 +4,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: aktiv-grotesk, sans-serif;
+  font-family: greycliff-cf, sans-serif;
   font-display: swap;
   font-size: var(--fontRegular);
   color: var(--colorDark);
@@ -35,7 +37,7 @@ body {
   display: inline-flex;
   align-items: center;
   transition: .4s;
-  
+
   .button-text {
     margin-left: var(--spacerSmall);
     font-size: 1.15rem;
@@ -47,7 +49,7 @@ body {
     .svg--arrow {
       fill: var(--colorDark);
     }
-  
+
     .svg--circle {
       fill: none;
       stroke: var(--colorDark);
@@ -57,9 +59,9 @@ body {
   }
 }
 
-li, a {
+li,
+a {
   text-decoration: none;
-  color: var(--colorDark);
 }
 
 h2 {
@@ -88,13 +90,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  
+
   body {
-  font-size: 18px;
+    font-size: 18px;
   }
 
   h2 {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -104,6 +106,7 @@ p {
     &:hover {
       padding-left: .75rem;
       transition: .4s;
+
       .svg--circle {
         fill: var(--colorAccent);
       }

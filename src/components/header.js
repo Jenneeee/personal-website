@@ -1,53 +1,19 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faDribbble, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import '../styles/components/header.scss'
+import * as styles from'.//header.module.scss'
 
 export default function Header () {
-    const [navbarOpen, setNavbarOpen] = useState(false)
-
-    const handleToggle = () => {
-        setNavbarOpen(prev => !prev)
-        
-        if (document.body.classList.contains("overflow")) {
-            document.body.classList.remove("overflow");
-        }
-        else {
-            document.body.classList.add("overflow")
-        }
-    }
-
-    const closeMenu = () => {
-        document.body.classList.remove("overflow")
-        setNavbarOpen(false)
-    }
 
   return (
-  <header className='header'>
-    <div className="navWrapper">
-        <h1><Link className='title' to="/" onClick={() => closeMenu()}>Jenne Cattoor.</Link></h1>
-
-        <button className={`hamburger ${navbarOpen ? ' open' : ''}`} id="hamburger" onClick={handleToggle}>
-            <span className='hidden'>Toggle Menu</span>
-            <span className='bar bar1'></span>
-            <span className='bar bar2'></span>
-        </button>
-    </div>
-    <div className={`menu ${navbarOpen ? 'open' : ''}`}>
-        <nav className="navigation">
-            <ul className="navList">
-                <li className='navlink'><Link to="/" activeClassName="active" onClick={() => closeMenu()}>Cases</Link></li>
-                <li className='navlink'><Link to="/about" activeClassName="active" onClick={() => closeMenu()}>About</Link></li>
-                <li className='navlink'><Link to="/contact" activeClassName="active" onClick={() => closeMenu()}>Contact</Link></li>
-            </ul>
-        </nav>
-        <div className='socials'>
-            <a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/><span className='hidden'>Instagram</span></a>
-            <a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faDribbble} /><span className='hidden'>Dribbble</span></a>
-            <a href="https://github.com/Jenneeee" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /><span className='hidden'>GitHub</span></a>
-            <a href="https://www.linkedin.com/in/jennecattoor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /><span className='hidden'>LinkedIn</span></a>
-        </div>
-    </div>
+  <header
+    className={styles.header}>
+    <h1><Link className={styles.name} to='/'>Jenne Cattoor</Link></h1>
+    <nav className={styles.navigation}>
+        <ul className={styles.navList}>
+            <li className={styles.navItem}><Link to='/' className={styles.navLink} activeClassName={styles.navLinkActive}>Portfolio</Link></li>
+            <li className={styles.navItem}><Link to='/about' className={styles.navLink} activeClassName={styles.navLinkActive}>About</Link></li>
+            <li className={styles.navItem}><Link to='/contact' className={styles.navLink} activeClassName={styles.navLinkActive}>Contact</Link></li>
+        </ul>
+    </nav>
  </header>)
 }

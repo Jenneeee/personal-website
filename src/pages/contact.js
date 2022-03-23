@@ -83,7 +83,7 @@ export default function Contact () {
         </div>
         <div className="contact-socials">
           <h4 className="contact-type">Email</h4>
-          <p><a href="mailto:jenne@cattoor.net">jenne@cattoor.net</a></p>
+          <p><a href="mailto:hello@jennecattoor.com">hello@jennecattoor.com</a></p>
           <h4 className="contact-type">Social media</h4>
           <p><a href="https://www.instagram.com/jennecattoor" target="_blank" rel="noreferrer">Instagram</a></p>
           <p><a href="https://dribbble.com/Cattoor" target="_blank" rel="noreferrer">Dribbble</a></p>
