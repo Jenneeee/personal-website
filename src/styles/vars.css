@@ -1,6 +1,6 @@
 :root {
   --colorLight: #ffffff;
-  --colorLightGray: #717171;
+  --colorGray: #aaa194;
   --colorDark: #1e1e1e;
   --colorAccent: #DBFF00;
   --spacerSmall: .5rem;
@@ -13,6 +13,4 @@
   --fontMedium: 1.3rem;
   --fontLarge: 2.5rem;
   --fontBig: 3rem;
-  --fontWeightRegular: 500;
-  --fontWeightBold: 700;
 }

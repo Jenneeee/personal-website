@@ -19,13 +19,13 @@
     transition: .125s;
 
     &:hover {
-        color: #AAA194;
+        color: var(--colorGray);
         transition: .125s;
     }
 }
 
 .linkActive {
-    color: #AAA194;
+    color: var(--colorGray);
 }
 
 @media only screen and (min-width: 768px) {

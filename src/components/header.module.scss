@@ -26,14 +26,14 @@
     transition: .125s;
 
     &:hover {
-      color: #AAA194;
+      color: var(--colorGray);
       transition: .125s;
     }
 
   }
 
   .navLinkActive {
-    color: #AAA194;
+    color: var(--colorGray);
   }
 }
 

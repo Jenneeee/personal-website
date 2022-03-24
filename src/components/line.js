@@ -7,9 +7,9 @@ export default function Footer () {
   <div className={styles.lineWrapper}>
     <hr className={styles.line} />
     <div className={styles.items}>
-      <p>Portfolio 1.0</p>
+      <p className={styles.itemScreenLarge}>Portfolio 1.0</p>
       <p>hello@jennecattoor.com</p>
-      <p>Digital Designer & Developer</p>
+      <p className={styles.itemScreenXLarge}>Digital Designer & Developer</p>
       <p>© {year}</p>
     </div>
  </div>)

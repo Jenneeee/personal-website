@@ -13,4 +13,26 @@
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 1024px) {}
+.itemScreenLarge {
+  display: none;
+}
+
+.itemScreenXLarge {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .itemScreenLarge {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .itemScreenXLarge {
+    display: block;
+  }
+
+}

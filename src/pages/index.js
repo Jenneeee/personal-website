@@ -14,7 +14,7 @@ export default function Index () {
     <Header />
     <div className={styles.wrapper}>
       <div className={styles.intro}>
-        <h2 className={styles.introText}>A multidisciplinary Designer &<br />Front-end Developer<br />based in Belgium.</h2>
+        <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDeskktop}/>Front-end Developer <br className={styles.brDeskktop}/>based in Belgium.</h2>
         <Line />
       </div>
     </div>

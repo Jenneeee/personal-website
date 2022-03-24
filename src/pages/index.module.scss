@@ -8,12 +8,23 @@
 
 .introText {
   margin: 1.5rem 0;
-  font-size: 5rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 120%;
 }
 
+.brDeskktop {
+  display: none;
+}
+
+@media only screen and (min-width: 550px) {
+  .brDeskktop {
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+
   .wrapper {
     margin: 0 3rem;
   }
@@ -21,6 +32,11 @@
   .intro {
     padding: 4rem 0rem
   }
+
+  .introText {
+    font-size: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -28,4 +44,17 @@
   .intro {
     padding: 7rem 0rem
   }
+
+  .introText {
+    font-size: 4rem;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .introText {
+    font-size: 5rem;
+  }
+
 }
