@@ -12,8 +12,9 @@
   color: #fff;
 }
 
-.socials-footer {
+.socials {
   margin-bottom: 2rem;
+
   a {
     color: #fff;
     font-size: 1.6rem;
@@ -27,13 +28,14 @@
     padding: 2rem 3rem;
     flex-direction: row;
   }
-  .socials-footer {
+
+  .socials {
     margin-bottom: 0;
-  } 
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .footer {
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
   }
 }

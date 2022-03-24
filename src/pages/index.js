@@ -1,10 +1,11 @@
 import React from "react"
 import Seo from "../components/seo"
+import Line from '../components/line'
 import Button from '../components/button'
 import Header from '../components/header'
 import Links from '../components/links'
 import Footer from '../components/footer'
-import * as styles from '../styles/pages/index.module.scss'
+import * as styles from './index.module.scss'
 
 export default function Index () {
   return (
@@ -13,8 +14,8 @@ export default function Index () {
     <Header />
     <div className={styles.wrapper}>
       <div className={styles.intro}>
-        <h2 className={styles.introText}>A multidisciplinary Designer &<br />Front-end developer<br />based in Belgium.</h2>
-        <Button to="/about" text="More about me" />
+        <h2 className={styles.introText}>A multidisciplinary Designer &<br />Front-end Developer<br />based in Belgium.</h2>
+        <Line />
       </div>
     </div>
     <Links />

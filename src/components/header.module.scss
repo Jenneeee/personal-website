@@ -22,18 +22,18 @@
   }
 
   .navLink {
-    color: #AAA194;
+    color: var(--colorDark);
     transition: .125s;
 
     &:hover {
-      color: var(--colorDark);
+      color: #AAA194;
       transition: .125s;
     }
 
   }
 
   .navLinkActive {
-    color: var(--colorDark);
+    color: #AAA194;
   }
 }
 
@@ -45,13 +45,7 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
-
-  .header {
-    margin: 2rem 4rem;
-  }
-
-}
+@media only screen and (min-width: 1024px) {}
 
 
 
