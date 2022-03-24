@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  transition: .4s;
+  color: var(--colorDark);
+  font-size: 1.4rem;
+}
+
+.text {
+  margin-left: var(--spacerSmall);
+  font-size: 1.15rem;
+}
+
+.icon {
+  width: 2.5rem;
+  margin-right: .5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .button {
+    &:hover {
+      padding-left: .75rem;
+      transition: .4s;
+    }
+  }
+}

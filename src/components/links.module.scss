@@ -1,0 +1,42 @@
+.wrapper {
+    margin: 6rem var(--spacerMobile);
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.item {
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+.link {
+    color: #AAA194;
+    transition: .125s;
+
+    &:hover {
+        color: var(--colorDark);
+        transition: .125s;
+    }
+}
+
+.linkActive {
+    color: var(--colorDark);
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        margin: 6rem 3rem;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        margin: 7rem 4rem;
+    }
+}

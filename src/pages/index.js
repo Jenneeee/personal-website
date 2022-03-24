@@ -1,58 +1,23 @@
 import React from "react"
-import { Link } from 'gatsby'
 import Seo from "../components/seo"
+import Button from '../components/button'
 import Header from '../components/header'
-import CasePreview from '../components/case-preview'
 import Links from '../components/links'
 import Footer from '../components/footer'
-import Arrow from '../icons/arrow'
-import { graphql, useStaticQuery } from "gatsby"
-import '../styles/pages/index.scss'
+import * as styles from '../styles/pages/index.module.scss'
 
 export default function Index () {
-  const data = useStaticQuery(graphql`
-  {
-    allProjectsJson {
-      edges {
-        node {
-          caseNumber
-          title
-          subTitle
-          slug
-          coverImage {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-    }
-  }`);
-
-  const projects = data.allProjectsJson.edges;
   return (
-  <div>
+  <>
     <Seo title="Multidisciplinary designer and front-end developer" />
     <Header />
-    <div className="home-wrapper">
-      <div className="home-intro">
-        <h2 className="home-intro-text">A multidisciplinary UI/UX Designer & Front-end developer based in Belgium.</h2>
-        <Link className="button" to="/about"><div className="button-arrow"><Arrow /></div><span className="button-text">More about me</span></Link>
+    <div className={styles.wrapper}>
+      <div className={styles.intro}>
+        <h2 className={styles.introText}>A multidisciplinary Designer &<br />Front-end developer<br />based in Belgium.</h2>
+        <Button to="/about" text="More about me" />
       </div>
-      <div className="selected-cases">
-      {projects.map(({ node: project }) => {
-        const caseNumber = project.caseNumber;
-        const title = project.title;
-        const subTitle = project.subTitle;
-        const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
-        const slug = project.slug;
-
-        return (
-          <CasePreview caseNumber={caseNumber} key={slug} title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} />
-        )
-      })}</div>
     </div>
     <Links />
     <Footer />
-  </div>)
+  </>)
 }

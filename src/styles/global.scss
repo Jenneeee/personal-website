@@ -33,55 +33,9 @@ body {
   overflow: hidden;
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  transition: .4s;
-
-  .button-text {
-    margin-left: var(--spacerSmall);
-    font-size: 1.15rem;
-  }
-
-  .button-arrow {
-    width: 2.5rem;
-
-    .svg--arrow {
-      fill: var(--colorDark);
-    }
-
-    .svg--circle {
-      fill: none;
-      stroke: var(--colorDark);
-      stroke-miterlimit: 10;
-      stroke-width: 1px;
-    }
-  }
-}
-
 li,
 a {
   text-decoration: none;
-}
-
-h2 {
-  line-height: 3rem;
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-h3 {
-  line-height: 2.1rem;
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-
-h4 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--colorLightGray);
-  line-height: 1.9rem;
-  font-size: 14px;
 }
 
 p {
@@ -93,23 +47,5 @@ p {
 
   body {
     font-size: 18px;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-
-  .button {
-    &:hover {
-      padding-left: .75rem;
-      transition: .4s;
-
-      .svg--circle {
-        fill: var(--colorAccent);
-      }
-    }
   }
 }

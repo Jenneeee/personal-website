@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from 'gatsby'
-import '../styles/components/links.scss'
+import * as styles from './links.module.scss'
 
 export default function links () {
   return (
-  <section className="quick-links-wrapper">
+  <section className={styles.wrapper}>
     <h4>Quick links</h4>
-    <ul className="quick-links">
-      <li className="quick-link"><Link to="/" activeClassName="active">Cases</Link></li>
-      <li className="quick-link"><Link to="/about" activeClassName="active">About</Link></li>
-      <li className="quick-link"><Link to="/contact" activeClassName="active">Contact</Link></li>
+    <ul className={styles.list}>
+      <li className={styles.item}><Link to="/" className={styles.link} activeClassName={styles.linkActive}>Portfolio</Link></li>
+      <li className={styles.item}><Link to="/about" className={styles.link} activeClassName={styles.linkActive}>About</Link></li>
+      <li className={styles.item}><Link to="/contact" className={styles.link} activeClassName={styles.linkActive}>Contact</Link></li>
     </ul>
   </section>)
 }
