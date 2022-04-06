@@ -37,12 +37,26 @@
     font-size: 3rem;
   }
 
+  .casePreview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 8rem;
+  }
+
+  .casePreview:nth-child(even) {
+    align-items: flex-start;
+  }
+
+  .casePreview:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 
   .intro {
-    padding: 7rem 0rem
+    padding: 5rem 0rem
   }
 
   .introText {

@@ -7,6 +7,7 @@ export default function Header () {
 
   const handleToggle = () => {
     setNavbarOpen(prev => !prev)
+    console.log(navbarOpen)
   }
 
   return (

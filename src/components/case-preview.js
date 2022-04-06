@@ -1,17 +1,17 @@
 import React from "react"
-import { Link } from 'gatsby'
-import Arrow from '../icons/arrow'
 import { GatsbyImage } from "gatsby-plugin-image"
-import '../styles/components/case-preview.scss'
+import * as styles from './case-preview.module.scss'
+import { Link } from 'gatsby'
 
-export default function CasePreview ({ caseNumber, title, subTitle, coverImage, slug }) {
+export default function CasePreview({ title, subTitle, slug, coverImage }) {
   return (
-  <section className="case-preview-wrapper">
-    <Link className="case-preview-image" to={`cases/${slug}`}><GatsbyImage image={coverImage} alt={title}/></Link>
-    <div className="case-preview-text">
-      <h4>{subTitle}</h4>
-      <h3 className="case-preview-title">{caseNumber}: {title}</h3>
-      <Link className="button" to={`cases/${slug}`}><div className="button-arrow"><Arrow /></div><span className="button-text">View Case</span></Link>
-    </div>
-  </section>)
+    <section className={styles.wrapper}>
+      <Link to={slug}>
+        <div className={styles.imageWrapper}><GatsbyImage className={styles.image} image={coverImage} alt={title} /></div>
+        <div>
+          <h3 className={styles.title}>{title}</h3>
+          <h4 className={styles.subtitle}>{subTitle}</h4>
+        </div>
+      </Link >
+    </section>)
 }

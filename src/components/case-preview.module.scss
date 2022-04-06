@@ -1,0 +1,39 @@
+.title {
+    color: var(--colorDark);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .6rem 0;
+}
+
+.subtitle {
+    color: var(--colorGray);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .wrapper {
+        max-width: 52%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .imageWrapper {
+        overflow: hidden;
+        background-color: var(--colorDark);
+    }
+
+    .image {
+        position: relative;
+        transition: .5s;
+
+        &:hover {
+            transform: scale(1.03);
+            transition: .5s;
+            opacity: .96;
+        }
+    }
+}

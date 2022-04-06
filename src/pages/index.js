@@ -1,29 +1,65 @@
 import React from "react"
 import Seo from "../components/seo"
 import Line from '../components/line'
-import Button from '../components/button'
 import Header from '../components/header'
+import CasePreview from '../components/case-preview'
 import Links from '../components/links'
 import Footer from '../components/footer'
 import * as styles from './index.module.scss'
 import { motion } from 'framer-motion'
+import { graphql, useStaticQuery } from "gatsby"
 
-export default function Index () {
+export default function Index() {
+  const data = useStaticQuery(graphql`
+  {
+    allProjectsJson {
+      edges {
+        node {
+          caseNumber
+          title
+          subTitle
+          slug
+          coverImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }`);
+
+  const projects = data.allProjectsJson.edges;
   return (
-  <>
-    <Seo title="Multidisciplinary designer and front-end developer" />
-    <Header />
-    <motion.div 
-      initial={{y:30, opacity: 0}}
-      animate={{y: 0, opacity: 1}}
-      transition={{duration: .4}}
-      className={styles.wrapper}>
-      <div className={styles.intro}>
-        <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDeskktop}/>Front-end Developer <br className={styles.brDeskktop}/>based in Belgium.</h2>
-        <Line />
-      </div>
-    </motion.div>
-    <Links />
-    <Footer />
-  </>)
+    <>
+      <Seo title="Multidisciplinary designer and front-end developer" />
+      <Header />
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: .4 }}
+        className={styles.wrapper}>
+        <div className={styles.intro}>
+          <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDeskktop} />Front-end Developer <br className={styles.brDeskktop} />based in Belgium.</h2>
+          <Line />
+        </div>
+        <div >
+          {projects.map(({ node: project }) => {
+            const caseNumber = project.caseNumber;
+            const title = project.title;
+            const subTitle = project.subTitle;
+            const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
+            const slug = project.slug;
+
+            return (
+              <div className={styles.casePreview}>
+                <CasePreview title={title} subTitle={subTitle} key={caseNumber} slug={slug} coverImage={coverImage} />
+              </div>
+            )
+          })}
+        </div>
+      </motion.div>
+      <Links />
+      <Footer />
+    </>)
 }

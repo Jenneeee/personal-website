@@ -17,21 +17,21 @@
 
 .form-label {
   display: flex;
-  position:relative;
+  position: relative;
   flex-direction: column;
   margin-bottom: var(--spacerMedium);
 
   .form-span {
     font-size: 1rem;
     color: var(--colorLightGray);
-    position:absolute;
-    transition-duration:300ms;
-    transform:translate(10px, 10px);
+    position: absolute;
+    transition-duration: 300ms;
+    transform: translate(10px, 10px);
   }
 
   &:focus-within .form-span {
     font-size: .8rem;
-    transform:translate(10px, -5px);
+    transform: translate(10px, -5px);
   }
 }
 
@@ -48,7 +48,7 @@
   margin-bottom: 1.5rem;
   font-size: 1rem;
   color: var(--colorDark);
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   position: relative;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
@@ -57,9 +57,9 @@
   }
 }
 
-.form-input:not(:placeholder-shown) + .form-span{
+.form-input:not(:placeholder-shown)+.form-span {
   font-size: .8rem;
-  transform:translate(10px, -5px);
+  transform: translate(10px, -5px);
 }
 
 .form-error {
