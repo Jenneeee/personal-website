@@ -53,7 +53,7 @@ export default function Index() {
 
             return (
               <div className={styles.casePreview}>
-                <CasePreview title={title} subTitle={subTitle} key={caseNumber} slug={slug} coverImage={coverImage} />
+                <CasePreview key={caseNumber} title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} />
               </div>
             )
           })}

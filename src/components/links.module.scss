@@ -2,6 +2,12 @@
     margin: 6rem var(--spacerMobile);
 }
 
+.text {
+    color: var(--colorGray);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;

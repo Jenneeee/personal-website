@@ -1,0 +1,43 @@
+.wrapper {
+  margin: var(--spacerMobile);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.socials {
+  justify-self: center;
+}
+
+.type {
+  color: var(--colorGray);
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 1.5rem 0 .5rem 0;
+}
+
+.social {
+  margin: .5rem 0;
+}
+
+.link {
+  color: var(--colorDark);
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .wrapper {
+    margin: 12rem 3rem;
+  }
+}
