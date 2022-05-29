@@ -1,3 +1,7 @@
+.wrapper {
+    margin-bottom: 4rem;
+}
+
 .title {
     color: var(--colorDark);
     font-size: 2rem;
@@ -15,6 +19,7 @@
 
     .wrapper {
         max-width: 52%;
+        margin-bottom: 0;
     }
 
 }
