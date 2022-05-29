@@ -40,7 +40,7 @@ export default function Index() {
         transition={{ duration: .4 }}
         className={styles.wrapper}>
         <div className={styles.intro}>
-          <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDeskktop} />Front-end Developer <br className={styles.brDeskktop} />based in Belgium.</h2>
+          <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDesktop} />Front-end Developer <br className={styles.brDesktop} />based in Belgium.</h2>
           <Line />
         </div>
         <div >
