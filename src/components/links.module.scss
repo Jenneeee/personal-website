@@ -43,6 +43,8 @@
 
 @media only screen and (min-width: 1024px) {
     .wrapper {
-        margin: 7rem 3rem;
+        margin: 7rem auto;
+        padding: 0 3rem;
+        max-width: var(--maxWidth);
     }
 }

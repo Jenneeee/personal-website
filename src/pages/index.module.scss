@@ -54,6 +54,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 3rem;
+    max-width: var(--maxWidth);
+  }
 
   .intro {
     padding: 5rem 0rem
