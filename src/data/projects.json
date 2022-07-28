@@ -1,9 +1,16 @@
 [
     {
-        "caseNumber": "01",
+        "title": "Unspiked",
+        "subTitle": "Concept + Design + Code",
+        "coverImage": "../data/images/unspiked/cover-image.jpg",
+        "slug": "case/unspiked",
+        "hover": "#e9f3cd"
+    },
+    {
+        "caseNumber": "02",
         "title": "Google Doodle",
         "subTitle": "Design + Animation + Concept",
-        "coverImage": "../data/images/case1/cover-image.jpg",
+        "coverImage": "../data/images/google-doodle/cover-image.jpg",
         "slug": "case/google-doodle",
         "description": "As part of our school class Motion, I received the assignment to create a Google Doodle. When you open Google, you often see one without even noticing it. It's a fun way to remind people of a special day in history.",
         "client": "N/A - School",
@@ -25,7 +32,7 @@
         "caseNumber": "02",
         "title": "Conference website",
         "subTitle": "Design + Illustrations + Concept",
-        "coverImage": "../data/images/case2/cover-image.jpg",
+        "coverImage": "../data/images/conference/cover-image.jpg",
         "slug": "case/conference-website",
         "description": "Conference Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         "client": "N/A - School",

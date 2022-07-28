@@ -1,0 +1,18 @@
+.wrapper {
+  margin: 5rem var(--spacerMobile);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    margin: 6rem auto;
+    padding: 0 3rem;
+    max-width: var(--maxWidth);
+  }
+
+}
