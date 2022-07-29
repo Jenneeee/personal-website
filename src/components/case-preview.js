@@ -5,8 +5,9 @@ import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
 export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage }) {
+
   return (
-    <section className={styles.wrapper} key={caseNumber}>
+    <section className={styles.wrapper} id="checkHover" key={caseNumber}>
       <Link to={slug}>
         <div className={styles.imageWrapper}><GatsbyImage className={styles.image} image={coverImage} alt={title} /></div>
         <div>

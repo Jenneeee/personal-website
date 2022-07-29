@@ -10,7 +10,7 @@
 }
 
 .image {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .subtitle {
@@ -20,7 +20,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
     .wrapper {
         max-width: 52%;
         margin-bottom: 0;
@@ -29,20 +28,17 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .wrapper {
+        transition: .2s;
+
+        &:hover {
+            transform: skew(.75deg, .75deg);
+            opacity: .75;
+        }
+    }
 
     .imageWrapper {
         overflow: hidden;
         background-color: var(--colorDark);
-    }
-
-    .image {
-        position: relative;
-        transition: .5s;
-
-        &:hover {
-            transform: scale(1.04);
-            transition: .5s;
-            opacity: .96;
-        }
     }
 }

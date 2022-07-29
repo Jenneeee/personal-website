@@ -3,8 +3,7 @@
         "title": "Unspiked",
         "subTitle": "Concept + Design + Code",
         "coverImage": "../data/images/unspiked/cover-image.jpg",
-        "slug": "case/unspiked",
-        "hover": "#e9f3cd"
+        "slug": "case/unspiked"
     },
     {
         "caseNumber": "02",

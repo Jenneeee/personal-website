@@ -43,7 +43,7 @@ export default function Index() {
           <h2 className={styles.introText}>A multidisciplinary Designer & <br className={styles.brDesktop} />Front-end Developer <br className={styles.brDesktop} />based in Belgium.</h2>
           <Line />
         </div>
-        <div >
+        <div>
           {projects.map(({ node: project }) => {
             const caseNumber = project.caseNumber;
             const title = project.title;
