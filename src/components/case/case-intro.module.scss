@@ -1,0 +1,56 @@
+.text {
+    margin: 15vh 0 25vh 0;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.subTitle {
+    font-size: 1.3rem;
+}
+
+.backgroundColor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40vh;
+    z-index: -1;
+}
+
+.info {
+    margin: 10rem 0 10rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+    .infoOverview {
+        margin-right: 8rem;
+    }
+
+    .infoTitle {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+
+    .infoGrid {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 7.5rem;
+    }
+
+    .infoSubTitle {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}

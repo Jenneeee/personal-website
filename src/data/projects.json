@@ -3,46 +3,21 @@
         "title": "Unspiked",
         "subTitle": "Concept + Design + Code",
         "coverImage": "../data/images/unspiked/cover-image.jpg",
-        "slug": "case/unspiked"
+        "slug": "case/unspiked",
+        "hover": "#E9F3CD"
     },
     {
-        "caseNumber": "02",
         "title": "Google Doodle",
         "subTitle": "Design + Animation + Concept",
         "coverImage": "../data/images/google-doodle/cover-image.jpg",
         "slug": "case/google-doodle",
-        "description": "As part of our school class Motion, I received the assignment to create a Google Doodle. When you open Google, you often see one without even noticing it. It's a fun way to remind people of a special day in history.",
-        "client": "N/A - School",
-        "category": "Animation",
-        "year": "2021",
-        "tools": "Adobe Illustrator / Adobe After Effects",
-        "links": [
-            {
-                "name": "See on Dribbble",
-                "url": "https://dribbble.com/Cattoor"
-            },
-            {
-                "name": "See on Behance",
-                "url": "https://dribbble.com/Cattoor"
-            }
-        ]
+        "hover": "#DC5D46"
     },
     {
-        "caseNumber": "02",
         "title": "Conference website",
         "subTitle": "Design + Illustrations + Concept",
         "coverImage": "../data/images/conference/cover-image.jpg",
         "slug": "case/conference-website",
-        "description": "Conference Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "client": "N/A - School",
-        "category": "Design",
-        "year": "2021",
-        "tools": "Figma / Adobe Illustrator",
-        "links": [
-            {
-                "name": "See on Dribbble",
-                "url": "https://dribbble.com/Cattoor"
-            }
-        ]
+        "hover": "#121314"
     }
 ]
