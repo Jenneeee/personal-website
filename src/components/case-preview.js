@@ -4,15 +4,16 @@ import * as styles from './case-preview.module.scss'
 import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
-export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage, hover }) {
+export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage, hover, hoverText }) {
 
   function changeBackgroundColor() {
     document.querySelector(':root').style.setProperty('--colorBackground', hover);
+    document.querySelector(':root').style.setProperty('--colorText', hoverText);
   }
 
   return (
-    <section className={styles.wrapper} id="checkHover" key={caseNumber} onMouseOver={changeBackgroundColor}>
-      <Link to={slug} state={{ color: hover }}>
+    <section className={styles.wrapper} id="checkHover" key={caseNumber}>
+      <Link to={slug} state={{ color: hover }} onMouseOver={changeBackgroundColor} role="button">
         <div className={styles.imageWrapper}><GatsbyImage className={styles.image} image={coverImage} alt={title} /></div>
         <div>
           <motion.h3

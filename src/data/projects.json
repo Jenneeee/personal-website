@@ -4,20 +4,23 @@
         "subTitle": "Concept + Design + Code",
         "coverImage": "../data/images/unspiked/cover-image.jpg",
         "slug": "case/unspiked",
-        "hover": "#E9F3CD"
+        "hover": "#E9F3CD",
+        "hoverText": "var(--colorDark)"
     },
     {
         "title": "Google Doodle",
         "subTitle": "Design + Animation + Concept",
         "coverImage": "../data/images/google-doodle/cover-image.jpg",
         "slug": "case/google-doodle",
-        "hover": "#DC5D46"
+        "hover": "#DC5D46",
+        "hoverText": "var(--colorDark)"
     },
     {
         "title": "Conference website",
         "subTitle": "Design + Illustrations + Concept",
         "coverImage": "../data/images/conference/cover-image.jpg",
         "slug": "case/conference-website",
-        "hover": "#121314"
+        "hover": "#121314",
+        "hoverText": "var(--colorLight)"
     }
 ]

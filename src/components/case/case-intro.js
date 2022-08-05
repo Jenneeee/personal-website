@@ -1,5 +1,4 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './case-intro.module.scss'
 
 export default function CaseIntro({ title, subTitle, color }) {
@@ -17,21 +16,21 @@ export default function CaseIntro({ title, subTitle, color }) {
         </div>
         <div className={styles.infoGrid}>
           <div>
-            <h3 className={styles.infoSubTitle}>Client</h3>
+            <h3 className={styles.infoTitle}>Client</h3>
             <p>School project</p>
           </div>
           <div>
-            <h3 className={styles.infoSubTitle}>Team</h3>
+            <h3 className={styles.infoTitle}>Team</h3>
             <p>2 Devine students</p>
             <p>2 CMD students</p>
           </div>
           <div>
-            <h3 className={styles.infoSubTitle}>Typefaces</h3>
+            <h3 className={styles.infoTitle}>Typefaces</h3>
             <p>Inter</p>
             <p>Integral</p>
           </div>
           <div>
-            <h3 className={styles.infoSubTitle}>Completed</h3>
+            <h3 className={styles.infoTitle}>Completed</h3>
             <p>Spring 2022</p>
           </div>
         </div>

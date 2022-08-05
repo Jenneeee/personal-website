@@ -29,8 +29,8 @@ p {
 }
 
 body:has(#checkHover:hover) {
-
   background-color: var(--colorBackground);
+  color: var(--colorText)
 }
 
 // @keyframes bgcolor {
