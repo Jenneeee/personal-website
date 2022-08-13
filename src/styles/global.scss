@@ -28,38 +28,8 @@ p {
   line-height: 130%;
 }
 
-body:has(#checkHover:hover) {
-  background-color: var(--colorBackground);
-  color: var(--colorText)
-}
-
-// @keyframes bgcolor {
-//   0% {
-//     background-color: #F4FBE4;
+// @media only screen and (min-width: 1024px) {
+//   body:has(#checkHover:hover) {
+//     background-color: var(--colorBackground);
 //   }
-
-//   20% {
-//     background-color: #E4FBEC;
-//   }
-
-//   40% {
-//     background-color: #E4F3FB;
-//   }
-
-//   60% {
-//     background-color: #F2E4FB;
-//   }
-
-//   80% {
-//     background-color: #FBEAE4;
-//   }
-
-//   100% {
-//     background-color: #FBF9E4;
-//   }
-// }
-
-// body:has(#checkHover:hover) {
-//   animation-delay: 10s;
-//   animation: bgcolor 16s infinite;
 // }

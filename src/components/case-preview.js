@@ -4,11 +4,10 @@ import * as styles from './case-preview.module.scss'
 import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
-export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage, hover, hoverText }) {
+export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage, hover }) {
 
   function changeBackgroundColor() {
     document.querySelector(':root').style.setProperty('--colorBackground', hover);
-    document.querySelector(':root').style.setProperty('--colorText', hoverText);
   }
 
   return (

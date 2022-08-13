@@ -19,7 +19,6 @@ export default function Index() {
           subTitle
           slug
           hover
-          hoverText
           coverImage {
             childImageSharp {
               gatsbyImageData
@@ -51,11 +50,10 @@ export default function Index() {
             const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
             const slug = project.slug;
             const hover = project.hover;
-            const hoverText = project.hoverText;
 
             return (
               <div className={styles.casePreview}>
-                <CasePreview title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} hover={hover} hoverText={hoverText} />
+                <CasePreview title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} hover={hover} />
               </div>
             )
           })}

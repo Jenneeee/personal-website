@@ -1,7 +1,7 @@
 import React from "react"
 import * as styles from './case-intro.module.scss'
 
-export default function CaseIntro({ title, subTitle, color }) {
+export default function CaseIntro({ title, subTitle, color, overview, client, team, typefaces, completed }) {
 
   return (
     <section>
@@ -12,26 +12,24 @@ export default function CaseIntro({ title, subTitle, color }) {
       <div className={styles.info}>
         <div className={styles.infoOverview}>
           <h3 className={styles.infoTitle}>Overview</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a pulvinar lectus, non pretium nisl. Sed orci felis, consequat sed magna ut, laoreet lobortis eros. <br /><br />Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras venenatis tristique egestas. Nunc nisi metus, convallis vitae sagittis eu, iaculis sit amet lorem.</p>
+          <p>{overview}</p>
         </div>
         <div className={styles.infoGrid}>
           <div>
             <h3 className={styles.infoTitle}>Client</h3>
-            <p>School project</p>
+            <p className={styles.infoText}>{client}</p>
           </div>
           <div>
             <h3 className={styles.infoTitle}>Team</h3>
-            <p>2 Devine students</p>
-            <p>2 CMD students</p>
+            <p className={styles.infoText}>{team}</p>
           </div>
           <div>
             <h3 className={styles.infoTitle}>Typefaces</h3>
-            <p>Inter</p>
-            <p>Integral</p>
+            <p className={styles.infoText}>{typefaces}</p>
           </div>
           <div>
             <h3 className={styles.infoTitle}>Completed</h3>
-            <p>Spring 2022</p>
+            <p className={styles.infoText}>{completed}</p>
           </div>
         </div>
       </div>
