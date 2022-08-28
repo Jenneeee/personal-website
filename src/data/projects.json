@@ -1,17 +1,17 @@
 [
     {
-        "title": "Unspiked",
-        "subTitle": "Concept + Design + Code",
-        "coverImage": "../data/images/unspiked/image-one.jpg",
-        "slug": "case/unspiked",
-        "hover": "#10BEA3"
-    },
-    {
         "title": "Google Doodle",
         "subTitle": "Design + Animation + Concept",
         "coverImage": "../data/images/google-doodle/cover-image.jpg",
         "slug": "case/google-doodle",
         "hover": "#DC5D46"
+    },
+    {
+        "title": "Unspiked",
+        "subTitle": "Concept + Design + Code",
+        "coverImage": "../data/images/unspiked/image-one.jpg",
+        "slug": "case/unspiked",
+        "hover": "#10BEA3"
     },
     {
         "title": "Conference website",

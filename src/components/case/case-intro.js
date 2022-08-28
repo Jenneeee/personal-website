@@ -33,7 +33,6 @@ export default function CaseIntro({ title, subTitle, color, overview, client, te
           </div>
         </div>
       </div>
-      {/* <StaticImage src='../../data/images/unspiked/cover-image.jpg' alt="Website of unspiked" /> */}
       <div className={styles.backgroundColor} style={{ backgroundColor: color }}></div>
     </section>)
 }
