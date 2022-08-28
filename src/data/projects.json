@@ -3,21 +3,18 @@
         "title": "Unspiked",
         "subTitle": "Concept + Design + Code",
         "coverImage": "../data/images/unspiked/image-one.jpg",
-        "slug": "case/unspiked",
-        "color": "#10BEA3"
+        "slug": "case/unspiked"
     },
     {
         "title": "Google Doodle",
         "subTitle": "Design + Animation + Concept",
         "coverImage": "../data/images/google-doodle/cover-image.jpg",
-        "slug": "case/google-doodle",
-        "color": "#DC5D46"
+        "slug": "case/google-doodle"
     },
     {
         "title": "Conference website",
         "subTitle": "Design + Illustrations + Concept",
         "coverImage": "../data/images/conference/cover-image.jpg",
-        "slug": "case/conference-website",
-        "color": "#121314"
+        "slug": "case/conference-website"
     }
 ]

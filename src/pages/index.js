@@ -18,7 +18,6 @@ export default function Index() {
           title
           subTitle
           slug
-          color
           coverImage {
             childImageSharp {
               gatsbyImageData
@@ -49,11 +48,10 @@ export default function Index() {
             const subTitle = project.subTitle;
             const coverImage = project.coverImage.childImageSharp.gatsbyImageData;
             const slug = project.slug;
-            const color = project.color;
 
             return (
               <div className={styles.casePreview}>
-                <CasePreview title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} color={color} />
+                <CasePreview title={title} subTitle={subTitle} slug={slug} coverImage={coverImage} />
               </div>
             )
           })}
