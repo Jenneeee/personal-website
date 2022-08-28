@@ -14,7 +14,7 @@ export default function Unspiked({ location }) {
             <Seo title="Unspiked" />
             <Header />
             <section className={styles.wrapper}>
-                <CaseIntro title='Unspiked' subTitle='A campaign against spiking' color={location.state.color} overview='Each year, Devine second-year students take part in a joint design challenge with CMD students in Rotterdam. Our team, which consisted of one Devine student and two CMD students, had six weeks to complete the project. Throughout the process, we encountered many challenges, but the result was rewarding' client='Municipality of Rotterdam' team={`2 Devine students\n2 CMD students`} typefaces={`Inter\nIntegral`} completed='Spring 2022' />
+                <CaseIntro title='Unspiked' subTitle='A campaign against spiking' overview='Each year, Devine second-year students take part in a joint design challenge with CMD students in Rotterdam. Our team, which consisted of one Devine student and two CMD students, had six weeks to complete the project. Throughout the process, we encountered many challenges, but the result was rewarding' client='Municipality of Rotterdam' team={`2 Devine students\n2 CMD students`} typefaces={`Inter\nIntegral`} completed='Spring 2022' />
                 <StaticImage className={styles.imageLarge} src='../../data/images/unspiked/image-one.jpg' alt="Website design of unspiked" />
                 <div className={styles.splitRight}>
                     <StaticImage src='../../data/images/unspiked/image-two.jpg' alt="Moodboard" />
