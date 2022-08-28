@@ -13,7 +13,7 @@ export default function CasePreview({ caseNumber, title, subTitle, slug, coverIm
   return (
     <section className={styles.wrapper} id="checkHover" key={caseNumber}>
       <Link to={slug} state={{ color: hover }} onMouseOver={changeBackgroundColor} role="button">
-        <div className={styles.imageWrapper}><GatsbyImage className={styles.image} image={coverImage} alt={title} /></div>
+        <div className={styles.imageWrapper}><GatsbyImage image={coverImage} alt={title} /></div>
         <div>
           <motion.h3
             initial={{ opacity: 0, y: -15 }}
