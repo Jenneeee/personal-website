@@ -6,13 +6,9 @@ import { motion } from 'framer-motion'
 
 export default function CasePreview({ caseNumber, title, subTitle, slug, coverImage, hover }) {
 
-  function changeBackgroundColor() {
-    document.querySelector(':root').style.setProperty('--colorBackground', hover);
-  }
-
   return (
     <section className={styles.wrapper} id="checkHover" key={caseNumber}>
-      <Link to={slug} state={{ color: hover }} onMouseOver={changeBackgroundColor} role="button">
+      <Link to={slug} state={{ color: hover }} role="button">
         <div className={styles.imageWrapper}><GatsbyImage image={coverImage} alt={title} /></div>
         <div>
           <motion.h3
